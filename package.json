@@ -1,0 +1,33 @@
+{
+  "name": "testing_webpack",
+  "version": "0.1",
+  "main": "index.js",
+  "author": "i",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "bootstrap": "4.0.0-beta",
+    "bootstrap-switch": "^3.3.4",
+    "css-loader": "^0.28.5",
+    "exports-loader": "^0.6.4",
+    "extract-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "2.1.2",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "image-webpack-loader": "^3.4.0",
+    "jquery": "^3.2.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "node-sass": "^4.5.3",
+    "popper.js": "^1.12.5",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "suppress-chunks-webpack-plugin": "^0.0.4",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.5",
+    "webpack-livereload-plugin": "^0.11.0"
+  }
+}
