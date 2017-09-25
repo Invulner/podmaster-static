@@ -2328,106 +2328,18 @@
   overflow: visible;
   clip: auto; }
 
-@font-face {
-  font-family: "November Hairline";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002047-e68ef6cdfdadea81d844e2487e659922.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002047-e68ef6cdfdadea81d844e2487e659922.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002047-e68ef6cdfdadea81d844e2487e659922.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002047-e68ef6cdfdadea81d844e2487e659922.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002047-e68ef6cdfdadea81d844e2487e659922.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Hairline Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002048-48e314c1de75bac6ac0d86297ab52f13.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002048-48e314c1de75bac6ac0d86297ab52f13.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002048-48e314c1de75bac6ac0d86297ab52f13.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002048-48e314c1de75bac6ac0d86297ab52f13.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002048-48e314c1de75bac6ac0d86297ab52f13.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Thin";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002049-41ef39b82d30458057a3e3a19e2ecf41.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002049-41ef39b82d30458057a3e3a19e2ecf41.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002049-41ef39b82d30458057a3e3a19e2ecf41.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002049-41ef39b82d30458057a3e3a19e2ecf41.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002049-41ef39b82d30458057a3e3a19e2ecf41.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Thin Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002050-8bc8241c0c924432bfcd9d3d41cd79a3.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002050-8bc8241c0c924432bfcd9d3d41cd79a3.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002050-8bc8241c0c924432bfcd9d3d41cd79a3.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002050-8bc8241c0c924432bfcd9d3d41cd79a3.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002050-8bc8241c0c924432bfcd9d3d41cd79a3.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November ExtraLight";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002051-47c6ea29cd97bf1e9287480d19b5eeac.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002051-47c6ea29cd97bf1e9287480d19b5eeac.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002051-47c6ea29cd97bf1e9287480d19b5eeac.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002051-47c6ea29cd97bf1e9287480d19b5eeac.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002051-47c6ea29cd97bf1e9287480d19b5eeac.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November ExtraLight Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002052-5ca95fd0cae294d43d91346010322b7b.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002052-5ca95fd0cae294d43d91346010322b7b.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002052-5ca95fd0cae294d43d91346010322b7b.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002052-5ca95fd0cae294d43d91346010322b7b.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002052-5ca95fd0cae294d43d91346010322b7b.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Light";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002053-5cf3c0c14e9133f6b38f9e09498f828e.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002053-5cf3c0c14e9133f6b38f9e09498f828e.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002053-5cf3c0c14e9133f6b38f9e09498f828e.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002053-5cf3c0c14e9133f6b38f9e09498f828e.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002053-5cf3c0c14e9133f6b38f9e09498f828e.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Light Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002054-e3f7fb855ce8604d00f9113f51fb3197.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002054-e3f7fb855ce8604d00f9113f51fb3197.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002054-e3f7fb855ce8604d00f9113f51fb3197.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002054-e3f7fb855ce8604d00f9113f51fb3197.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002054-e3f7fb855ce8604d00f9113f51fb3197.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Regular";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002055-bdd0f25306950d23b3258de391fdb6d5.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002055-bdd0f25306950d23b3258de391fdb6d5.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002055-bdd0f25306950d23b3258de391fdb6d5.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002055-bdd0f25306950d23b3258de391fdb6d5.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002055-bdd0f25306950d23b3258de391fdb6d5.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Regular Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002056-9375f75ac60d62c2c95a28544bbc0048.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002056-9375f75ac60d62c2c95a28544bbc0048.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002056-9375f75ac60d62c2c95a28544bbc0048.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002056-9375f75ac60d62c2c95a28544bbc0048.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002056-9375f75ac60d62c2c95a28544bbc0048.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Medium";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002057-1b7f8ec7cc6c46a47d7c072428eb92ca.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002057-1b7f8ec7cc6c46a47d7c072428eb92ca.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002057-1b7f8ec7cc6c46a47d7c072428eb92ca.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002057-1b7f8ec7cc6c46a47d7c072428eb92ca.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002057-1b7f8ec7cc6c46a47d7c072428eb92ca.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Medium Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002058-79e04eb68f0f1fd43ecca05873acf45c.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002058-79e04eb68f0f1fd43ecca05873acf45c.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002058-79e04eb68f0f1fd43ecca05873acf45c.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002058-79e04eb68f0f1fd43ecca05873acf45c.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002058-79e04eb68f0f1fd43ecca05873acf45c.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Bold";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002059-ac5727173e53499d80e73bdae07bc050.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002059-ac5727173e53499d80e73bdae07bc050.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002059-ac5727173e53499d80e73bdae07bc050.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002059-ac5727173e53499d80e73bdae07bc050.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002059-ac5727173e53499d80e73bdae07bc050.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Bold Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002060-e112b36a8ee680366928e3b9a40f789f.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002060-e112b36a8ee680366928e3b9a40f789f.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002060-e112b36a8ee680366928e3b9a40f789f.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002060-e112b36a8ee680366928e3b9a40f789f.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002060-e112b36a8ee680366928e3b9a40f789f.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Black";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002061-7042975af5be735548e02ad66ca15173.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002061-7042975af5be735548e02ad66ca15173.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002061-7042975af5be735548e02ad66ca15173.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002061-7042975af5be735548e02ad66ca15173.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002061-7042975af5be735548e02ad66ca15173.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Black Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002062-d92717cb8c071e2d502d05655e7c860b.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002062-d92717cb8c071e2d502d05655e7c860b.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002062-d92717cb8c071e2d502d05655e7c860b.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002062-d92717cb8c071e2d502d05655e7c860b.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002062-d92717cb8c071e2d502d05655e7c860b.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Heavy";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002073-6fb03bda85b7d7773c82e61643cee359.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002073-6fb03bda85b7d7773c82e61643cee359.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002073-6fb03bda85b7d7773c82e61643cee359.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002073-6fb03bda85b7d7773c82e61643cee359.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002073-6fb03bda85b7d7773c82e61643cee359.svg#Typotheque_webfonts_service") format("svg"); }
-
-@font-face {
-  font-family: "November Heavy Italic";
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002074-d6eb11b944f3247e9136157be7b8fdba.eot");
-  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002074-d6eb11b944f3247e9136157be7b8fdba.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002074-d6eb11b944f3247e9136157be7b8fdba.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002074-d6eb11b944f3247e9136157be7b8fdba.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-000099-009534-002074-d6eb11b944f3247e9136157be7b8fdba.svg#Typotheque_webfonts_service") format("svg"); }
-
 body {
   padding-top: 70px;
-  background-color: #f8fafd; }
+  background-color: #f8fafd;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .header {
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 #f3f6fa, inset 0 -1px 0 0 #e6e9ee;
   padding: 0;
   align-items: stretch; }
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .header .navbar-header {
       width: 100%;
       display: flex;
@@ -2463,24 +2375,24 @@ body {
       line-height: 70px;
       color: #3d4e66;
       padding: 0 20px; }
-      @media screen and (max-width: 960px) {
+      @media only screen and (max-width: 960px) {
         .header .navbar-collapse .nav-link {
           padding: 0 10px; } }
-      @media screen and (max-width: 768px) {
+      @media only screen and (max-width: 768px) {
         .header .navbar-collapse .nav-link {
           border-right: none; } }
     .header .navbar-collapse .active .nav-link {
       -webkit-box-shadow: inset 0 -3px 0 0 #1951ff;
       box-shadow: inset 0 -3px 0 0 #1951ff; }
-      @media screen and (max-width: 768px) {
+      @media only screen and (max-width: 768px) {
         .header .navbar-collapse .active .nav-link {
           box-shadow: none; } }
-    @media screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
       .header .navbar-collapse {
         padding: 10px 0; } }
   .header .navbar-toggle {
     display: none; }
-    @media screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
       .header .navbar-toggle {
         display: block;
         margin-right: 15px; } }
@@ -2513,10 +2425,10 @@ body {
         line-height: 1.43;
         text-align: left;
         margin-left: 10px; }
-    @media screen and (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
       .header .nav-profile li {
         padding: 0 10px; } }
-    @media screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
       .header .nav-profile li {
         border-right: none;
         padding: 10px; } }
@@ -2543,7 +2455,7 @@ body {
     .podcasts .podcast .podcast-image {
       margin: 0;
       padding: 0; }
-      @media (max-width: 768px) {
+      @media only screen and (max-width: 768px) {
         .podcasts .podcast .podcast-image {
           text-align: center; } }
     .podcasts .podcast .podcast-content {
@@ -2665,10 +2577,10 @@ body {
         .podcasts .podcast .podcast-trigers .dropdown .dropdown-item:hover {
           background-color: #f5f7fa;
           box-shadow: inset 0 1px 0 0 #e6e9ee, inset 0 -1px 0 0 #e6e9ee; }
-      @media screen and (max-width: 960px) {
+      @media only screen and (max-width: 960px) {
         .podcasts .podcast .podcast-trigers {
           padding-left: 15px; } }
 
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   .podcasts .podcast {
     padding-left: 15px; } }
