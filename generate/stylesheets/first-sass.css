@@ -2417,8 +2417,9 @@ body {
     display: flex;
     align-items: center;
     padding: 0 20px;
-    border-right: 1px solid #e6e9ee;
     position: relative; }
+    .header .nav-profile li:not(:last-child) {
+      border-right: 1px solid #e6e9ee; }
     @media only screen and (max-width: 960px) {
       .header .nav-profile li {
         padding: 0 10px; } }
@@ -2454,6 +2455,13 @@ body {
   line-height: 1.43;
   text-align: left;
   margin-left: 10px; }
+
+.profile-dropdown__arrow {
+  color: #adbacc;
+  font-size: 8px;
+  position: relative;
+  top: -1px;
+  margin-left: 1px; }
 
 .podcasts {
   padding-top: 34px;
@@ -2581,27 +2589,50 @@ body {
     text-align: left;
     color: #263140;
     margin-right: 10px; }
-  .podcast__trigers .dropdown .dropdown-menu {
-    padding: 0;
-    margin-top: 10px; }
-  .podcast__trigers .dropdown .dropdown-toggle {
-    font-family: November Regular, sans-serif;
-    font-size: 13px;
-    line-height: 1.54;
-    text-align: left;
-    color: #6b7e99;
-    cursor: pointer; }
-  .podcast__trigers .dropdown .dropdown-item {
-    padding: 10px 20px;
-    font-family: November Regular, sans-serif;
-    font-size: 14px;
-    line-height: 1.43;
-    text-align: left;
-    color: #3d4e66;
-    width: 198px; }
-    .podcast__trigers .dropdown .dropdown-item:hover {
-      background-color: #f5f7fa;
-      box-shadow: inset 0 1px 0 0 #e6e9ee, inset 0 -1px 0 0 #e6e9ee; }
+  .podcast__trigers .dropdown {
+    display: flex;
+    align-items: center; }
+    .podcast__trigers .dropdown .dropdown-menu {
+      padding: 0;
+      margin-top: 5px; }
+    .podcast__trigers .dropdown .dropdown-toggle {
+      font-family: November Regular, sans-serif;
+      font-size: 13px;
+      line-height: 1.54;
+      text-align: left;
+      color: #6b7e99;
+      cursor: pointer;
+      display: flex;
+      align-items: center; }
+      .podcast__trigers .dropdown .dropdown-toggle:after {
+        display: none; }
+    .podcast__trigers .dropdown .dropdown-item {
+      padding: 10px 20px;
+      font-family: November Regular, sans-serif;
+      font-size: 14px;
+      line-height: 1.43;
+      text-align: left;
+      color: #3d4e66;
+      width: 198px; }
+      .podcast__trigers .dropdown .dropdown-item:not(:last-child) {
+        border-bottom: 1px solid #e6e9ee; }
+      .podcast__trigers .dropdown .dropdown-item:hover {
+        background-color: #f5f7fa; }
+    .podcast__trigers .dropdown .dropdown__arrow {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      background-color: #f3f6fa;
+      border: 1px solid #d5dbe6;
+      margin-left: 5px; }
+      .podcast__trigers .dropdown .dropdown__arrow .fa {
+        font-size: 12px;
+        color: #8f9eb3; }
+    .podcast__trigers .dropdown.show .dropdown__arrow {
+      background-color: #fff; }
   @media only screen and (max-width: 960px) {
     .podcast__trigers {
       padding-left: 15px; } }
