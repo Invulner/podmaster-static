@@ -31,7 +31,7 @@
 
       <ul class="navbar-nav nav-profile">
         <li>
-          <button class="btn-success">Add Podcast</button>
+          <button class="btn btn--green">Add Podcast</button>
         </li>
         <li>
           <a href="#" data-toggle="dropdown">
@@ -41,9 +41,9 @@
           <ul class="dropdown-menu dropdown-menu-right  notifications"></ul>
         </li>
         <li>
-          <a href="#" class="profile" data-toggle="dropdown">
-            <img src="http://placehold.it/40x40" class="header-avatar img-circle ml10" alt="user" title="user">
-            <span>Alice Houston</span>
+          <a href="#" class="profile-dropdown" data-toggle="dropdown">
+            <img src="http://placehold.it/40x40" class="profile-dropdown__img img-circle ml10" alt="user" title="user">
+            <span class="profile-dropdown__name">Alice Houston</span>
           </a>
           <ul class="dropdown-menu dropdown-menu-right"></ul>
         </li>
@@ -52,16 +52,16 @@
   </nav>
 
   <div class="container podcasts">
-    <h2>My Podcasts</h2>
+    <h2 class="section-title">My Podcasts</h2>
 
     <div class="row podcast">
-      <div class="col-sm-12 col-md-2 podcast-image">
+      <div class="col-sm-12 col-md-2 podcast__image">
         <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/180x180" alt=""/>
       </div>
 
-      <div class="col-sm-12 col-md-6 podcast-content">
-        <a href="#" class="podcast-title">Dope – Choose Your Style</a>
-        <p class="podcast-text">
+      <div class="col-sm-12 col-md-6 podcast__content">
+        <a href="#" class="podcast__title">Dope – Choose Your Style</a>
+        <p class="podcast__text">
           Get the marketing shortcuts you need to jump-start your online business. Brian Moran, a marketing
           expert and the co-founder at SamCart, shares his daily insights from growing and running a
           multi-million dollar software startup, so that you can
@@ -70,10 +70,10 @@
           </span>
           <a href="#more1" data-toggle="collapse" aria-expanded="false">Read more</a>
         </p>
-        <p class="podcast-episodes">120 Episodes</p>
+        <p class="podcast__episodes">120 Episodes</p>
       </div>
 
-      <div class="col-sm-12 col-md-4 podcast-trigers">
+      <div class="col-sm-12 col-md-4 podcast__trigers">
         <label for="checkbox1">Auto publish</label>
         <input id="switch-size" name="checkbox1" type="checkbox" checked="checked" data-size="mini" data-label-width="18" data-handle-width="20"/>
 
@@ -91,13 +91,13 @@
     </div>
 
     <div class="row podcast">
-      <div class="col-sm-12 col-md-2 podcast-image">
+      <div class="col-sm-12 col-md-2 podcast__image">
         <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/180x180" alt=""/>
       </div>
 
-      <div class="col-sm-12 col-md-6 podcast-content">
-        <a href="#" class="podcast-title">Beginning of Travel – Welcome to New Zealand</a>
-        <p class="podcast-text">
+      <div class="col-sm-12 col-md-6 podcast__content">
+        <a href="#" class="podcast__title">Beginning of Travel – Welcome to New Zealand</a>
+        <p class="podcast__text">
           Do you want to learn how to travel the world for as long as you desire, on your terms while
           spending less money? Whether you're a travel newbie dying to figure out how to explore the world,
           an occasional traveler longing to make your
@@ -106,10 +106,10 @@
           </span>
           <a href="#more" data-toggle="collapse" aria-expanded="false">Read more</a>
         </p>
-        <p class="podcast-episodes">85 Episodes</p>
+        <p class="podcast__episodes">85 Episodes</p>
       </div>
 
-      <div class="col-sm-12 col-md-4 podcast-trigers">
+      <div class="col-sm-12 col-md-4 podcast__trigers">
         <label for="checkbox1">Auto publish</label>
         <input id="switch-size" name="checkbox1" type="checkbox" checked="checked" data-size="mini" data-label-width="18" data-handle-width="20">
 
@@ -127,21 +127,21 @@
     </div>
 
     <div class="row podcast">
-      <div class="col-sm-12 col-md-2 podcast-image">
+      <div class="col-sm-12 col-md-2 podcast__image">
         <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/180x180" alt=""/>
       </div>
 
-      <div class="col-sm-12 col-md-6 podcast-content">
-        <a href="#" class="podcast-title">Inspire to The Future – Working Since 1980</a>
-        <p class="podcast-text">
+      <div class="col-sm-12 col-md-6 podcast__content">
+        <a href="#" class="podcast__title">Inspire to The Future – Working Since 1980</a>
+        <p class="podcast__text">
           A shameless self-promotional plug perhaps. Hosted by myself, Justin Pot and Dave LeClair,
           Technophilia is our weekly and opinionated take on tech news, as well as app, website or game
           picks for the week.
         </p>
-        <p class="podcast-episodes">148 Episodes</p>
+        <p class="podcast__episodes">148 Episodes</p>
       </div>
 
-      <div class="col-sm-12 col-md-4 podcast-trigers">
+      <div class="col-sm-12 col-md-4 podcast__trigers">
         <label for="checkbox1">Auto publish</label>
         <input id="switch-size" name="checkbox1" type="checkbox" data-size="mini" data-label-width="18" data-handle-width="20">
 
@@ -159,20 +159,20 @@
     </div>
 
     <div class="row podcast">
-      <div class="col-sm-12 col-md-2 podcast-image">
+      <div class="col-sm-12 col-md-2 podcast__image">
         <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/180x180" alt=""/>
       </div>
 
-      <div class="col-sm-12 col-md-6 podcast-content">
-        <a href="#" class="podcast-title">Get Now – Complete Training</a>
-        <p class="podcast-text">
+      <div class="col-sm-12 col-md-6 podcast__content">
+        <a href="#" class="podcast__title">Get Now – Complete Training</a>
+        <p class="podcast__text">
           Whether you eat like a caveman or are just curious about the Paleo diet, Practical Paleo author
           Diane Sanfilippo’s podcast is a go-to for anyone curious about the grain-free, dairy-free lifestyle.
         </p>
-        <p class="podcast-episodes">14 Episodes</p>
+        <p class="podcast__episodes">14 Episodes</p>
       </div>
 
-      <div class="col-sm-12 col-md-4 podcast-trigers">
+      <div class="col-sm-12 col-md-4 podcast__trigers">
         <label for="checkbox1">Auto publish</label>
         <input id="switch-size" name="checkbox1" type="checkbox"  data-size="mini" data-label-width="18" data-handle-width="20"/>
 

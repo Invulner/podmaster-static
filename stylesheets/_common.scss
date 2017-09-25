@@ -1,0 +1,15 @@
+body {
+  padding-top: $header-height;
+  background-color: #f8fafd;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-title {
+  font-family: November Regular, sans-serif;
+  font-size: 24px;
+  line-height: 1.67;
+  text-align: left;
+  color: #262e40;
+  margin: 18px 0;
+}

@@ -1,0 +1,26 @@
+.btn {
+  font-family: November Regular, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 20px;
+  box-shadow: none;
+  outline: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn--green {
+  color: #fff;
+  background-color: $green;
+
+  &:hover {
+    background-color: darken($green, 10%);
+  }
+}
