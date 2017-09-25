@@ -7,7 +7,7 @@ var LiveReloadPlugin = require("webpack-livereload-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractHTML = new ExtractTextPlugin("[name].html");
 module.exports = {
-    entry: { 
+    entry: {
         index: "./html/index.html",
         first: "./js/first.js" },
     output: {
@@ -133,7 +133,7 @@ module.exports = {
         extractHTML,
         new SuppressChunksPlugin(["index"], { filter: /\.js$/ }),
         new LiveReloadPlugin(),
-         new webpack.ProvidePlugin({   
+         new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
         'window.jQuery': 'jquery',

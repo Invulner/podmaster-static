@@ -1,12 +1,10 @@
 import "jquery";
-import Popper from "popper.js";
-
-
 import "bootstrap";
 import "bootstrap-switch";
 import 'bootstrap/js/dist/dropdown';
+import Popper from "popper.js";
 
 
-$(document).ready(function () {
-	$("input").bootstrapSwitch();
-})
+$(document).ready(() => {
+  $("input").bootstrapSwitch();
+});
