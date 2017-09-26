@@ -2342,6 +2342,71 @@ body {
   color: #262e40;
   margin: 18px 0; }
 
+.switch-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer; }
+
+.switch-checkbox__label {
+  margin-right: 10px;
+  color: #6b7e99;
+  font-size: 14px; }
+
+.switch-checkbox__input {
+  display: none; }
+
+.switch-checkbox__appearance {
+  display: block;
+  width: 65px;
+  height: 30px;
+  border-radius: 20px;
+  background: #b8c0cc;
+  position: relative;
+  transition: background .3s ease-in-out; }
+  .switch-checkbox__appearance:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(38, 47, 64, 0.15);
+    transition: left .3s ease-in-out; }
+  .switch-checkbox__input:checked ~ .switch-checkbox__appearance {
+    background: #1951ff; }
+    .switch-checkbox__input:checked ~ .switch-checkbox__appearance:after {
+      left: 41px; }
+
+.switch-checkbox__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  transition: all .3s ease-in-out;
+  color: #fff;
+  text-transform: uppercase; }
+
+.switch-checkbox__text--on {
+  opacity: 0;
+  visibility: hidden;
+  left: 100%; }
+  .switch-checkbox__input:checked ~ .switch-checkbox__appearance .switch-checkbox__text--on {
+    opacity: 1;
+    left: 10px;
+    visibility: visible; }
+
+.switch-checkbox__text--off {
+  opacity: 1;
+  visibility: visible;
+  right: 10px; }
+  .switch-checkbox__input:checked ~ .switch-checkbox__appearance .switch-checkbox__text--off {
+    opacity: 0;
+    right: 100%;
+    visibility: hidden; }
+
 .podmaster-dropdown__toggle {
   font-family: November Regular, sans-serif;
   font-size: 13px;
@@ -2517,7 +2582,8 @@ body {
   text-decoration: none;
   color: #3d4a66; }
   .profile-dropdown:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #263140; }
 
 .profile-dropdown__img {
   border-radius: 50%; }
@@ -2535,6 +2601,8 @@ body {
   position: relative;
   top: -1px;
   margin-left: 1px; }
+  .profile-dropdown:hover .profile-dropdown__arrow {
+    color: #263140; }
 
 .podcasts {
   padding-top: 34px;

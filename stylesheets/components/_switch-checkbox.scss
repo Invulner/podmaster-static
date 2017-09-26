@@ -1,0 +1,85 @@
+$switch-checkbox__circle-size: 18px;
+$switch-checkbox__area-width: 65px;
+$switch-checkbox__padding: 6px;
+
+.switch-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch-checkbox__label {
+  margin-right: 10px;
+  color: #6b7e99;
+  font-size: 14px;
+}
+
+.switch-checkbox__input {
+  display: none;
+}
+
+.switch-checkbox__appearance {
+  display: block;
+  width: $switch-checkbox__area-width;
+  height: 30px;
+  border-radius: 20px;
+  background: #b8c0cc;
+  position: relative;
+  transition: background .3s ease-in-out;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: $switch-checkbox__padding;
+    top: $switch-checkbox__padding;
+    width: $switch-checkbox__circle-size;
+    height: $switch-checkbox__circle-size;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(38, 47, 64, .15);
+    transition: left .3s ease-in-out;
+  }
+
+  .switch-checkbox__input:checked ~ & {
+    background: $blue-active;
+
+    &:after {
+      left: $switch-checkbox__area-width - $switch-checkbox__padding - $switch-checkbox__circle-size;
+    }
+  }
+}
+
+.switch-checkbox__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  transition: all .3s ease-in-out;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.switch-checkbox__text--on {
+  opacity: 0;
+  visibility: hidden;
+  left: 100%;
+
+  .switch-checkbox__input:checked ~ .switch-checkbox__appearance & {
+    opacity: 1;
+    left: 10px;
+    visibility: visible;
+  }
+}
+
+.switch-checkbox__text--off {
+  opacity: 1;
+  visibility: visible;
+  right: 10px;
+
+  .switch-checkbox__input:checked ~ .switch-checkbox__appearance & {
+    opacity: 0;
+    right: 100%;
+    visibility: hidden;
+  }
+}

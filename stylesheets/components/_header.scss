@@ -110,6 +110,7 @@
 
   &:hover {
     text-decoration: none;
+    color: #263140;
   }
 }
 
@@ -131,4 +132,8 @@
   position: relative;
   top: -1px;
   margin-left: 1px;
+
+  .profile-dropdown:hover & {
+    color: #263140;
+  }
 }
