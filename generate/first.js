@@ -12795,9 +12795,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-// $(document).ready(() => {
-//   $("input").bootstrapSwitch();
-// });
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.panel__row-description').on('show.bs.collapse', function () {
+  let id = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).attr('id');
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('[data-target="#' + id + '"]').parents('.panel__row').addClass('panel__row--expanded show');
+}).on('hide.bs.collapse', function () {
+  let id = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).attr('id');
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('[data-target="#' + id + '"]').parents('.panel__row').removeClass('panel__row--expanded show');
+});
 
 /***/ }),
 /* 5 */
@@ -16667,7 +16671,7 @@ module.exports = g;
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
   * bootstrap-switch - Turn checkboxes and radio buttons into toggle switches.
   *
   * @version v3.3.4
@@ -16740,7 +16744,7 @@ module.exports = g;
     };
   }();
 
-  var $ = _jquery2.default || __webpack_provided_window_dot_jQuery || window.$;
+  var $ = _jquery2.default || window.jQuery || window.$;
 
   var BootstrapSwitch = function () {
     function BootstrapSwitch(element) {
@@ -17455,7 +17459,6 @@ module.exports = g;
   };
 });
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 8 */

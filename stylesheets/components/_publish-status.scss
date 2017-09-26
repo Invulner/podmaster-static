@@ -1,0 +1,18 @@
+.publish-status {
+  padding: 0 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: November Regular, sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.publish-status--published {
+  background: #e8faf1;
+  color: #13bf69;
+}
+
+.publish-status--backlogged {
+  background: #f2f6fa;
+  color: #8f9eb3;
+}

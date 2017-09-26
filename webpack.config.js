@@ -134,10 +134,9 @@ module.exports = {
         extractHTML,
         new SuppressChunksPlugin(["index"], { filter: /\.js$/ }),
         new LiveReloadPlugin(),
-         new webpack.ProvidePlugin({
+        new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
-        'window.jQuery': 'jquery',
         Popper: ['popper.js', 'default'],
         // In case you imported plugins individually, you must also require them here:
         Util: "exports-loader?Util!bootstrap/js/dist/util",

@@ -1,6 +1,6 @@
 .aside__block {
   border-radius: 4px;
-  border: 1px solid #d5dbe6;
+  border: 1px solid $border-color;
   overflow: hidden;
 }
 
@@ -29,14 +29,14 @@
   position: relative;
 
   &:hover {
-    background: #f7fafc;
+    background: $bg-color;
     text-decoration: none;
     color: #2e3b4d;
   }
 }
 
 .aside__list-link--active {
-  background: #f7fafc;
+  background: $bg-color;
 
   &:after {
     content: '';
