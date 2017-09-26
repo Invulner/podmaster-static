@@ -9,6 +9,7 @@ const extractHTML = new ExtractTextPlugin("[name].html");
 module.exports = {
     entry: {
         index: "./html/index.html",
+        details: "./html/podcast-details.html",
         first: "./js/first.js" },
     output: {
         filename: "[name].js",
