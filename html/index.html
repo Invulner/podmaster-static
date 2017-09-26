@@ -34,9 +34,15 @@
           <button class="btn btn--green">Add Podcast</button>
         </li>
         <li>
-          <a href="#" data-toggle="dropdown">
-            <i class="fa fa-bell-o"></i>
-            <div class="status bg-danger border-danger animated bounce"></div>
+          <a href="#" data-toggle="dropdown" class="notification notification--active">
+            <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <g id="icon-bell" transform="translate(1.000000, 1.000000)" stroke-width="2">
+                  <path d="M20,15 L0,15 C1.65685425,15 3,13.6568542 3,12 L3,6.99999994 C3.00000006,3.13400671 6.13400679,-4.44089213e-16 10,0 C13.8659932,4.44089213e-16 16.9999999,3.13400671 17,6.99999994 L17,12 C17,13.6568542 18.3431458,15 20,15 L20,15 Z" id="Shape" stroke="#8F9EB3" fill="#8F9EB3"></path>
+                  <path d="M11,19 C10.6897707,19.6168043 10.1182676,19.9964563 9.5,19.9964563 C8.88173242,19.9964563 8.31022927,19.6168043 8,19 L11,19 Z" id="Path" stroke="#ADBACC"></path>
+                </g>
+              </g>
+            </svg>
           </a>
           <ul class="dropdown-menu dropdown-menu-right  notifications"></ul>
         </li>
@@ -78,17 +84,23 @@
         <label for="checkbox1">Auto publish</label>
         <input id="switch-size" name="checkbox1" type="checkbox" checked="checked" data-size="mini" data-label-width="18" data-handle-width="20"/>
 
-        <div class="dropdown ml-auto">
-          <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="podmaster-dropdown dropdown ml-auto">
+          <div class="podmaster-dropdown__toggle dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Actions
-            <span class="dropdown__arrow">
-              <i class="fa fa-chevron-down"></i>
+            <span class="podmaster-dropdown__arrow">
+              <svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                  <g id="icons/arrow-menu/active" transform="translate(-6.000000, -8.000000)" stroke-width="1.5" stroke="#8F9EB3">
+                    <polyline id="arrow-down--small" points="7 9 10 12 13 9"></polyline>
+                  </g>
+                </g>
+              </svg>
             </span>
           </div>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">View details</a>
-            <a class="dropdown-item" href="#">Publish settings</a>
-            <a class="dropdown-item text-danger" href="#">Remove podcast</a>
+          <div class="podmaster-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="podmaster-dropdown__item dropdown-item" href="#">View details</a>
+            <a class="podmaster-dropdown__item dropdown-item" href="#">Publish settings</a>
+            <a class="podmaster-dropdown__item dropdown-item text-danger" href="#">Remove podcast</a>
           </div>
         </div>
       </div>
@@ -117,17 +129,23 @@
         <label for="checkbox1">Auto publish</label>
         <input id="switch-size" name="checkbox1" type="checkbox" checked="checked" data-size="mini" data-label-width="18" data-handle-width="20">
 
-        <div class="dropdown ml-auto">
-          <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="podmaster-dropdown dropdown ml-auto">
+          <div class="podmaster-dropdown__toggle dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Actions
-            <span class="dropdown__arrow">
-              <i class="fa fa-chevron-down"></i>
+            <span class="podmaster-dropdown__arrow">
+              <svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                  <g id="icons/arrow-menu/active" transform="translate(-6.000000, -8.000000)" stroke-width="1.5" stroke="#8F9EB3">
+                    <polyline id="arrow-down--small" points="7 9 10 12 13 9"></polyline>
+                  </g>
+                </g>
+              </svg>
             </span>
           </div>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">View details</a>
-            <a class="dropdown-item" href="#">Publish settings</a>
-            <a class="dropdown-item text-danger" href="#">Remove podcast</a>
+          <div class="podmaster-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="podmaster-dropdown__item dropdown-item" href="#">View details</a>
+            <a class="podmaster-dropdown__item dropdown-item" href="#">Publish settings</a>
+            <a class="podmaster-dropdown__item dropdown-item text-danger" href="#">Remove podcast</a>
           </div>
         </div>
       </div>
@@ -152,17 +170,23 @@
         <label for="checkbox1">Auto publish</label>
         <input id="switch-size" name="checkbox1" type="checkbox" data-size="mini" data-label-width="18" data-handle-width="20">
 
-        <div class="dropdown ml-auto">
-          <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="podmaster-dropdown dropdown ml-auto">
+          <div class="podmaster-dropdown__toggle dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Actions
-            <span class="dropdown__arrow">
-              <i class="fa fa-chevron-down"></i>
+            <span class="podmaster-dropdown__arrow">
+              <svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                  <g id="icons/arrow-menu/active" transform="translate(-6.000000, -8.000000)" stroke-width="1.5" stroke="#8F9EB3">
+                    <polyline id="arrow-down--small" points="7 9 10 12 13 9"></polyline>
+                  </g>
+                </g>
+              </svg>
             </span>
           </div>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">View details</a>
-            <a class="dropdown-item" href="#">Publish settings</a>
-            <a class="dropdown-item text-danger" href="#">Remove podcast</a>
+          <div class="podmaster-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="podmaster-dropdown__item dropdown-item" href="#">View details</a>
+            <a class="podmaster-dropdown__item dropdown-item" href="#">Publish settings</a>
+            <a class="podmaster-dropdown__item dropdown-item text-danger" href="#">Remove podcast</a>
           </div>
         </div>
       </div>
@@ -186,17 +210,23 @@
         <label for="checkbox1">Auto publish</label>
         <input id="switch-size" name="checkbox1" type="checkbox"  data-size="mini" data-label-width="18" data-handle-width="20"/>
 
-        <div class="dropdown ml-auto">
-          <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="podmaster-dropdown dropdown ml-auto">
+          <div class="podmaster-dropdown__toggle dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Actions
-            <span class="dropdown__arrow">
-              <i class="fa fa-chevron-down"></i>
+            <span class="podmaster-dropdown__arrow">
+              <svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                  <g id="icons/arrow-menu/active" transform="translate(-6.000000, -8.000000)" stroke-width="1.5" stroke="#8F9EB3">
+                    <polyline id="arrow-down--small" points="7 9 10 12 13 9"></polyline>
+                  </g>
+                </g>
+              </svg>
             </span>
           </div>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">View details</a>
-            <a class="dropdown-item" href="#">Publish settings</a>
-            <a class="dropdown-item text-danger" href="#">Remove podcast</a>
+          <div class="podmaster-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="podmaster-dropdown__item dropdown-item" href="#">View details</a>
+            <a class="podmaster-dropdown__item dropdown-item" href="#">Publish settings</a>
+            <a class="podmaster-dropdown__item dropdown-item text-danger" href="#">Remove podcast</a>
           </div>
         </div>
       </div>

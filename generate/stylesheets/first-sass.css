@@ -2330,7 +2330,7 @@
 
 body {
   padding-top: 70px;
-  background-color: #f8fafd;
+  background-color: #f7fafc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -2341,6 +2341,79 @@ body {
   text-align: left;
   color: #262e40;
   margin: 18px 0; }
+
+.podmaster-dropdown__toggle {
+  font-family: November Regular, sans-serif;
+  font-size: 13px;
+  line-height: 1.54;
+  text-align: left;
+  color: #6b7e99;
+  cursor: pointer;
+  display: flex;
+  align-items: center; }
+  .podmaster-dropdown__toggle:after {
+    display: none; }
+
+.podmaster-dropdown__arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #f2f6fa;
+  border: 1px solid #d5dbe6;
+  margin-left: 5px; }
+  .podmaster-dropdown__arrow svg {
+    fill: #8f9eb3;
+    opacity: .8;
+    width: 10px;
+    height: 7px; }
+  .podmaster-dropdown:hover .podmaster-dropdown__arrow {
+    border-color: #adbacc; }
+    .podmaster-dropdown:hover .podmaster-dropdown__arrow svg {
+      opacity: 1; }
+  .podmaster-dropdown.show .podmaster-dropdown__arrow {
+    background-color: #fff;
+    border-color: #adbacc; }
+    .podmaster-dropdown.show .podmaster-dropdown__arrow svg {
+      opacity: 1; }
+
+.podmaster-dropdown__menu {
+  padding: 0;
+  margin-top: 5px; }
+
+.podmaster-dropdown__item {
+  padding: 10px 20px;
+  font-family: November Regular, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #3d4a66;
+  width: 198px; }
+  .podmaster-dropdown__item:not(:last-child) {
+    border-bottom: 1px solid #e6e9ee; }
+  .podmaster-dropdown__item:hover {
+    background-color: #f5f7fa; }
+
+.notification {
+  position: relative; }
+  .notification svg {
+    display: block; }
+  .notification:hover svg * {
+    fill: #596980;
+    stroke: #596980; }
+
+.notification--active:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: -4px;
+  right: 2px;
+  border: 2px solid #fff;
+  background: #1951ff; }
 
 .btn {
   font-family: November Regular, sans-serif;
@@ -2390,7 +2463,7 @@ body {
       font-family: November Regular, sans-serif;
       font-size: 14px;
       line-height: 70px;
-      color: #3d4e66;
+      color: #3d4a66;
       padding: 0 20px; }
       @media only screen and (max-width: 960px) {
         .header .navbar-collapse .nav-link {
@@ -2442,7 +2515,7 @@ body {
 
 .profile-dropdown {
   text-decoration: none;
-  color: #3d4e66; }
+  color: #3d4a66; }
   .profile-dropdown:hover {
     text-decoration: none; }
 
@@ -2592,47 +2665,6 @@ body {
   .podcast__trigers .dropdown {
     display: flex;
     align-items: center; }
-    .podcast__trigers .dropdown .dropdown-menu {
-      padding: 0;
-      margin-top: 5px; }
-    .podcast__trigers .dropdown .dropdown-toggle {
-      font-family: November Regular, sans-serif;
-      font-size: 13px;
-      line-height: 1.54;
-      text-align: left;
-      color: #6b7e99;
-      cursor: pointer;
-      display: flex;
-      align-items: center; }
-      .podcast__trigers .dropdown .dropdown-toggle:after {
-        display: none; }
-    .podcast__trigers .dropdown .dropdown-item {
-      padding: 10px 20px;
-      font-family: November Regular, sans-serif;
-      font-size: 14px;
-      line-height: 1.43;
-      text-align: left;
-      color: #3d4e66;
-      width: 198px; }
-      .podcast__trigers .dropdown .dropdown-item:not(:last-child) {
-        border-bottom: 1px solid #e6e9ee; }
-      .podcast__trigers .dropdown .dropdown-item:hover {
-        background-color: #f5f7fa; }
-    .podcast__trigers .dropdown .dropdown__arrow {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 4px;
-      background-color: #f3f6fa;
-      border: 1px solid #d5dbe6;
-      margin-left: 5px; }
-      .podcast__trigers .dropdown .dropdown__arrow .fa {
-        font-size: 12px;
-        color: #8f9eb3; }
-    .podcast__trigers .dropdown.show .dropdown__arrow {
-      background-color: #fff; }
   @media only screen and (max-width: 960px) {
     .podcast__trigers {
       padding-left: 15px; } }

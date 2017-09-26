@@ -29,7 +29,7 @@
       font-family: November Regular, sans-serif;
       font-size: 14px;
       line-height: $header-height;
-      color: #3d4e66;
+      color: $black;
       padding: 0 20px;
 
       @include max-width(960px) {
@@ -42,8 +42,8 @@
     }
 
     .active .nav-link {
-      -webkit-box-shadow: inset 0 -3px 0 0 #1951ff;
-      box-shadow: inset 0 -3px 0 0 #1951ff;
+      -webkit-box-shadow: inset 0 -3px 0 0 $blue-active;
+      box-shadow: inset 0 -3px 0 0 $blue-active;
 
       @include max-width(768px) {
         box-shadow: none;
@@ -106,7 +106,7 @@
 
 .profile-dropdown {
   text-decoration: none;
-  color: #3d4e66;
+  color: $black;
 
   &:hover {
     text-decoration: none;

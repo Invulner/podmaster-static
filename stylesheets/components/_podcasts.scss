@@ -41,7 +41,7 @@
     }
 
     &.bootstrap-switch-on {
-      background-color: #1951ff;
+      background-color: $blue-active;
     }
 
     &.bootstrap-switch-off {
@@ -93,7 +93,7 @@
   display: block;
 
   &:hover {
-    color: #1951ff;
+    color: $blue-active;
   }
 }
 
@@ -107,7 +107,7 @@
   color: #596980;
 
   a {
-    color: #1951ff;
+    color: $blue-active;
     display: inline-block;
     text-decoration: none;
 
@@ -163,65 +163,6 @@
   .dropdown {
     display: flex;
     align-items: center;
-
-    .dropdown-menu {
-      padding: 0;
-      margin-top: 5px;
-    }
-
-    .dropdown-toggle {
-      font-family: November Regular, sans-serif;
-      font-size: 13px;
-      line-height: 1.54;
-      text-align: left;
-      color: #6b7e99;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-
-      &:after {
-        display: none;
-      }
-    }
-
-    .dropdown-item {
-      padding: 10px 20px;
-      font-family: November Regular, sans-serif;
-      font-size: 14px;
-      line-height: 1.43;
-      text-align: left;
-      color: #3d4e66;
-      width: 198px;
-
-      &:not(:last-child) {
-        border-bottom: 1px solid #e6e9ee; //TODO: should be global rule?
-      }
-
-      &:hover {
-        background-color: #f5f7fa;
-      }
-    }
-
-    .dropdown__arrow {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 4px;
-      background-color: #f3f6fa;
-      border: 1px solid #d5dbe6;
-      margin-left: 5px;
-
-      .fa {
-        font-size: 12px;
-        color: #8f9eb3;
-      }
-    }
-
-    &.show .dropdown__arrow {
-      background-color: #fff;
-    }
   }
 
   @include max-width(960px) {
