@@ -89,7 +89,7 @@ $panel__side-padding: 20px;
 }
 
 .panel__header {
-  background: $bg-color;
+  background: #fff;
   height: 59px;
   display: flex;
   align-items: center;
@@ -97,6 +97,7 @@ $panel__side-padding: 20px;
 
   .panel--collapse-in & {
     border-radius: 4px 4px 0 0;
+    background: $bg-color;
   }
 }
 
@@ -162,4 +163,6 @@ $panel__side-padding: 20px;
 
 .panel__body {
   padding: 25px 0;
+  font-family: November Regular, sans-serif;
+  font-size: 14px;
 }

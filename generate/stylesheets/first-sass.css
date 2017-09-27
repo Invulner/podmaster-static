@@ -2357,6 +2357,12 @@ time {
   font-family: November Light, sans-serif;
   color: #6b7e99; }
 
+.switch-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; }
+
 .link {
   font-size: 13px;
   position: relative;
@@ -2996,13 +3002,14 @@ time {
   padding-bottom: 25px; }
 
 .panel__header {
-  background: #f7fafc;
+  background: #fff;
   height: 59px;
   display: flex;
   align-items: center;
   border-radius: 4px; }
   .panel--collapse-in .panel__header {
-    border-radius: 4px 4px 0 0; }
+    border-radius: 4px 4px 0 0;
+    background: #f7fafc; }
 
 .panel__title {
   font-size: 18px;
@@ -3052,7 +3059,9 @@ time {
     background: #8ea0b8; }
 
 .panel__body {
-  padding: 25px 0; }
+  padding: 25px 0;
+  font-family: November Regular, sans-serif;
+  font-size: 14px; }
 
 .publish-status {
   padding: 0 5px;
