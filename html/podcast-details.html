@@ -13,7 +13,7 @@
 <body>
   <nav class="navbar navbar-expand-md fixed-top header">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Podmaster</a>
+      <a class="navbar-brand" href="index.html">Podmaster</a>
       <button type="button" class="navbar-toggle btn btn-defult" data-toggle="collapse" data-target="#myNavbar">
         ☰
       </button>
@@ -91,7 +91,7 @@
         <div class="podcast-details">
           <div class="podcast-details__main">
             <div class="podcast-details__img-block">
-              <img src="http://placehold.it/220x220" alt="podcast image" class="podcast-details__img"/>
+              <img src="http://placehold.it/220x220" alt="podcast image" class="podcast-details__img rounded"/>
             </div>
             <div class="podcast-details__body">
               <p class="podcast-details__text">
@@ -104,6 +104,19 @@
               <div class="podcast-details__controls">
                 <p class="podcast-details__message">
                   Auto publish to Youtube
+                  <a class="podcast-details__tooltip tooltip-block" type="button" data-toggle="tooltip" data-placement="top" title="Every new episode will be published to YouTube automatically, as well as any that are currently…">
+                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="icons/help">
+                          <g id="Group">
+                            <path d="M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 Z" id="Path" fill="#ADBACC"></path>
+                            <path d="M8,11 C7.447,11 7,11.447 7,12 C7,12.553 7.447,13 8,13 C8.553,13 9,12.553 9,12 C9,11.447 8.553,11 8,11 Z" id="Path" fill="#FFFFFF"></path>
+                            <path d="M8,3 C6.343,3 5,4.343 5,6 C5,6.553 5.447,7 6,7 C6.553,7 7,6.553 7,6 C7,5.447 7.447,5 8,5 C8.553,5 9,5.447 9,6 C9,6.553 8.553,7 8,7 C7.447,7 7,7.447 7,8 L7,9 C7,9.553 7.447,10 8,10 C8.553,10 9,9.553 9,9 L9,8.816 C10.162,8.403 11,7.304 11,6 C11,4.343 9.657,3 8,3 Z" id="Path" fill="#FFFFFF"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
                 </p>
                 <label class="switch-checkbox podcast-details__checkbox">
                   <input type="checkbox" class="switch-checkbox__input"/>
@@ -122,7 +135,29 @@
           </div>
         </div>
 
-        <h3 class="section-sub-title">All Episodes</h3>
+        <h3 class="section-sub-title">
+          All Episodes
+
+          <div class="podmaster-dropdown podmaster-dropdown--arrow dropdown">
+            <div class="podmaster-dropdown__toggle dropdown-toggle" id="episodes-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="podmaster-dropdown__arrow">
+                <svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="icons/arrow-menu/active" transform="translate(-6.000000, -8.000000)" stroke-width="1.5" stroke="#8F9EB3">
+                      <polyline id="arrow-down--small" points="7 9 10 12 13 9"></polyline>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+            </div>
+
+            <div class="podmaster-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="episodes-dropdown">
+              <a class="podmaster-dropdown__item podmaster-dropdown__item--checked dropdown-item" href="#">All</a>
+              <a class="podmaster-dropdown__item dropdown-item" href="#">Published</a>
+              <a class="podmaster-dropdown__item dropdown-item" href="#">Backlogged</a>
+            </div>
+          </div>
+        </h3>
 
         <div class="panel">
           <div class="panel__header">
@@ -271,6 +306,19 @@
               <div class="publish-status publish-status--backlogged">
                 Backlogged
               </div>
+
+              <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="icons/info">
+                    <g id="Group">
+                      <path d="M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 Z" id="icon" fill="#ADBACC" fill-rule="nonzero"></path>
+                      <path d="M8,5 C8.553,5 9,4.553 9,4 C9,3.447 8.553,3 8,3 C7.447,3 7,3.447 7,4 C7,4.553 7.447,5 8,5 Z" id="Path" fill="#FFFFFF"></path>
+                      <path d="M9,11 L9,7 C9,6.447 8.553,6 8,6 L7,6 C6.447,6 6,6.447 6,7 C6,7.553 6.447,8 7,8 L7,11 C6.447,11 6,11.447 6,12 C6,12.553 6.447,13 7,13 L9,13 C9.553,13 10,12.553 10,12 C10,11.447 9.553,11 9,11 Z" id="Path" fill="#FFFFFF"></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
               <span class="podmaster-dropdown__arrow panel__expand-row-btn">
                 <svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -328,6 +376,10 @@
               </span>
             </div>
           </div>
+        </div>
+
+        <div class="btn-container btn-container--pagination">
+          <button class="btn btn--light-blue">Load More Episodes</button>
         </div>
       </div>
     </div>

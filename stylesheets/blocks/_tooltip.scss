@@ -1,0 +1,43 @@
+.tooltip-inner {
+  font-family: November Regular, sans-serif;
+  background: #596980;
+  text-align: left;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 1px 4px #b8c0cc;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip.bs-tooltip-top {
+  .arrow:before {
+    border-top-color: #596980;
+  }
+}
+
+.tooltip.bs-tooltip-bottom {
+  .arrow:before {
+    border-bottom-color: #596980;
+  }
+}
+
+.tooltip.bs-tooltip-right {
+  .arrow:before {
+    border-right-color: #596980;
+  }
+}
+
+.tooltip.bs-tooltip-left {
+  .arrow:before {
+    border-left-color: #596980;
+  }
+}
+
+.tooltip-block {
+  -webkit-appearance: none !important;
+}

@@ -103,37 +103,3 @@
     }
   }
 }
-
-.profile-dropdown {
-  text-decoration: none;
-  color: $black;
-
-  &:hover {
-    text-decoration: none;
-    color: #263140;
-  }
-}
-
-.profile-dropdown__img {
-  border-radius: 50%;
-}
-
-.profile-dropdown__name {
-  font-family: November Regular, sans-serif;
-  font-size: 14px;
-  line-height: 1.43;
-  text-align: left;
-  margin-left: 10px;
-}
-
-.profile-dropdown__arrow {
-  color: #adbacc;
-  font-size: 8px;
-  position: relative;
-  top: -1px;
-  margin-left: 1px;
-
-  .profile-dropdown:hover & {
-    color: #263140;
-  }
-}

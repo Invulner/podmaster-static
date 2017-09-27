@@ -24,3 +24,13 @@
     background-color: darken($green, 10%);
   }
 }
+
+.btn--light-blue {
+  color: $blue-active;
+  border: 1px solid $border-color;
+  background-color: #f2f6fa;
+
+  &:hover {
+    background-color: $border-color;
+  }
+}

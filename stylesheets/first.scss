@@ -5,13 +5,16 @@
 @import 'virtual/variables';
 
 @import 'common';
-@import 'components/switch-checkbox';
-@import 'components/dropdown';
-@import 'components/notification';
-@import 'components/btns';
-@import 'components/header';
-@import 'components/podcasts';
-@import 'components/aside';
-@import 'components/podcast-details';
-@import 'components/panel';
-@import 'components/publish-status';
+@import 'blocks/link';
+@import 'blocks/switch-checkbox';
+@import 'blocks/dropdown';
+@import 'blocks/notification';
+@import 'blocks/btn';
+@import 'blocks/header';
+@import 'blocks/profile-dropdown';
+@import 'blocks/podcasts';
+@import 'blocks/aside';
+@import 'blocks/podcast-details';
+@import 'blocks/panel';
+@import 'blocks/publish-status';
+@import 'blocks/tooltip';

@@ -137,12 +137,13 @@
 }
 
 .podcast__trigers {
-  margin-top: 40px;
+  margin-top: 38px;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  padding-left: 53px;
+  padding-left: 65px;
   user-select: none;
+  padding-right: 0;
 
   label {
     font-family: November Regular, sans-serif;

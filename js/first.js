@@ -1,8 +1,10 @@
 import $ from "jquery";
+import Popper from "popper.js";
+
 import "bootstrap";
 import "bootstrap-switch";
 import 'bootstrap/js/dist/dropdown';
-import Popper from "popper.js";
+import 'bootstrap/js/dist/tooltip';
 
 $('.panel__row-description')
   .on('show.bs.collapse', function() {
@@ -13,3 +15,7 @@ $('.panel__row-description')
     let id = $(this).attr('id');
     $('[data-target="#' + id + '"]').parents('.panel__row').removeClass('panel__row--expanded show');
   })
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
