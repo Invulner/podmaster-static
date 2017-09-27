@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Podmaster</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/scss/bootstrap.scss">
+  <link href="../node_modules/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.typotheque.com/WF-030091-010036.css">
+  <link rel="stylesheet" href="../stylesheets/first.scss">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top header">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Podmaster</a>
+      <button type="button" class="navbar-toggle btn btn-defult" data-toggle="collapse" data-target="#myNavbar">
+        ☰
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">My Podcasts</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav nav-profile">
+        <li>
+          <button class="btn btn--green">Add Podcast</button>
+        </li>
+        <li>
+          <a href="#" data-toggle="dropdown" class="notification notification--active">
+            <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <g id="icon-bell" transform="translate(1.000000, 1.000000)" stroke-width="2">
+                  <path d="M20,15 L0,15 C1.65685425,15 3,13.6568542 3,12 L3,6.99999994 C3.00000006,3.13400671 6.13400679,-4.44089213e-16 10,0 C13.8659932,4.44089213e-16 16.9999999,3.13400671 17,6.99999994 L17,12 C17,13.6568542 18.3431458,15 20,15 L20,15 Z" id="Shape" stroke="#8F9EB3" fill="#8F9EB3"></path>
+                  <path d="M11,19 C10.6897707,19.6168043 10.1182676,19.9964563 9.5,19.9964563 C8.88173242,19.9964563 8.31022927,19.6168043 8,19 L11,19 Z" id="Path" stroke="#ADBACC"></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right  notifications"></ul>
+        </li>
+        <li>
+          <a href="#" class="profile-dropdown" data-toggle="dropdown">
+            <img src="http://placehold.it/40x40" class="profile-dropdown__img img-circle ml10" alt="user" title="user">
+            <span class="profile-dropdown__name">Alice Houston</span>
+            <i class="fa fa-chevron-down profile-dropdown__arrow"></i></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right"></ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container main">
+    <div class="row">
+      <aside class="col-3 aside main__aside">
+        <a class="link link--back aside__back-link" href="#">
+          Back to podcasts
+        </a>
+
+        <div class="aside__block">
+          <ul class="aside__list">
+            <li class="aside__list-item">
+              <a href="#" class="aside__list-link">
+                Podcast details
+              </a>
+            </li>
+            <li class="aside__list-item">
+              <a href="#" class="aside__list-link">
+                Video design
+              </a>
+            </li>
+            <li class="aside__list-item">
+              <a href="#" class="aside__list-link aside__list-link--active">
+                Publish settings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="col-9 main__content">
+        <h2 class="section-title">Dope - Choose Your Style Podcast</h2>
+
+        <div id="accordion">
+          <div class="panel panel--collapse panel--collapse-in">
+            <div class="panel__header">
+              <h3 class="panel__title">Publish Settings</h3>
+              <a class="panel__collapse-btn" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapseOne"></a>
+            </div>
+            <div class="collapse show" id="collapse-1">
+              <div class="panel__body">
+                Panel body
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel--collapse">
+            <div class="panel__header">
+              <h3 class="panel__title">Video settings</h3>
+              <span class="panel__title-hint hint">(Optional - Recommended)</span>
+              <a class="panel__collapse-btn collapsed" data-toggle="collapse" href="#collapse-2" aria-expanded="true" aria-controls="collapseOne"></a>
+            </div>
+            <div class="collapse" id="collapse-2">
+              <div class="panel__body">
+                Panel body
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <button class="btn btn--white">Cancel</button>
+            <button class="btn btn--blue">Save Settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+  <script src="first.js"></script>
+</body>
+</html>

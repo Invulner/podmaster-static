@@ -14,6 +14,10 @@
     outline: none;
     box-shadow: none;
   }
+
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .btn--green {
@@ -33,4 +37,33 @@
   &:hover {
     background-color: $border-color;
   }
+}
+
+.btn--white {
+  background-color: #fff;
+  border: 1px solid $border-color;
+  color: #2e3b4d;
+
+  &:hover {
+    background-color: $bg-color;
+  }
+}
+
+.btn--blue {
+  background-color: $blue-active;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($blue-active, 10%);
+  }
+}
+
+.btn-container {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.btn-container--pagination {
+  margin-top: 30px;
+  text-align: center;
 }

@@ -10,6 +10,7 @@ module.exports = {
     entry: {
         index: "./html/index.html",
         details: "./html/podcast-details.html",
+        settings: "./html/publish-settings.html",
         first: "./js/first.js" },
     output: {
         filename: "[name].js",

@@ -16,6 +16,14 @@ $('.panel__row-description')
     $('[data-target="#' + id + '"]').parents('.panel__row').removeClass('panel__row--expanded show');
   })
 
+$('.panel--collapse .collapse')
+  .on('show.bs.collapse', function() {
+    $(this).parents('.panel--collapse').addClass('panel--collapse-in');
+  })
+  .on('hide.bs.collapse', function() {
+    $(this).parents('.panel--collapse').removeClass('panel--collapse-in');
+  })
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })

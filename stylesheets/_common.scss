@@ -22,24 +22,12 @@ body {
   color: #2e3b4d;
 }
 
-.main {
-  padding-top: 45px;
-  padding-bottom: 240px;
-  max-width: 1110px;
-  width: 100%;
-}
-
-.main__aside {
-  flex: 0 0 $aside-width + 2 * 15px; //15px - side padding for bootstrap columns
-  max-width: $aside-width + 2 * 15px;
-  padding-top: 9px;
-}
-
 time {
   color: #6b7e99;
 }
 
-.btn-container--pagination {
-  margin-top: 30px;
-  text-align: center;
+.hint {
+  font-size: 13px;
+  font-family: November Light, sans-serif;
+  color: #6b7e99;
 }

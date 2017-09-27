@@ -1,0 +1,16 @@
+.main {
+  padding-top: 45px;
+  padding-bottom: 240px;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.main__aside {
+  flex: 0 0 $aside-width + 2 * 15px; //15px - side padding for bootstrap columns
+  max-width: $aside-width + 2 * 15px;
+  padding-top: 9px;
+}
+
+.main__content {
+  max-width: calc(100% - #{$aside-width} - 2 * 15px);
+}

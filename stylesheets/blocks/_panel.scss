@@ -11,7 +11,7 @@ $panel__side-padding: 20px;
   background: #fff;
 }
 
-.panel__header {
+.panel__table-header {
   font-family: November Medium, sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -20,15 +20,16 @@ $panel__side-padding: 20px;
   border-radius: 4px 4px 0 0;
 }
 
-.panel__header,
+.panel__table-header,
 .panel__row,
-.panel__row-description {
+.panel__row-description,
+.panel__header {
   margin-left: - $panel__side-padding;
   padding: 0 $panel__side-padding;
   width: calc(100% + 2 * #{$panel__side-padding});
 }
 
-.panel__header,
+.panel__table-header,
 .panel__row {
   display: flex;
   height: 50px;
@@ -44,15 +45,15 @@ $panel__side-padding: 20px;
 }
 
 .panel__column--title {
-  flex: 0 0 400px;
+  width: 52%;
 }
 
 .panel__column--release {
-  flex: 0 0 140px;
+  width: 19%;
 }
 
 .panel__column--status {
-  width: 100%;
+  width: 29%;
 }
 
 .panel__row,
@@ -85,4 +86,80 @@ $panel__side-padding: 20px;
   margin: 0;
   padding-top: 5px;
   padding-bottom: 25px;
+}
+
+.panel__header {
+  background: $bg-color;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+
+  .panel--collapse-in & {
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+.panel__title {
+  font-size: 18px;
+  margin: 0;
+  font-family: November Regular, sans-serif;
+  color: #2e3b4d;
+}
+
+.panel__collapse-btn {
+  margin-left: auto;
+}
+
+.panel--collapse {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.panel__title-hint {
+  margin-left: 15px;
+}
+
+.panel__collapse-btn {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: #adbacc;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -5px;
+    border-radius: 1px;
+    background: #fff;
+  }
+
+  &.collapsed:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 10px;
+    margin-left: -1px;
+    margin-top: -5px;
+    border-radius: 1px;
+    background: #fff;
+  }
+
+  &:hover {
+    background: darken(#adbacc, 10%);
+  }
+}
+
+.panel__body {
+  padding: 25px 0;
 }
