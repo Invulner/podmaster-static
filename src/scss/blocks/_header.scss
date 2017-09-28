@@ -74,12 +74,13 @@
 
   .navbar-nav {
     flex-direction: row;
+
     @include max-width(576px) {
       flex-direction: column;
     }
   }
 
-  .nav-profile li {
+  .nav-profile_item {
     display: flex;
     align-items: center;
     padding: 0 20px;
