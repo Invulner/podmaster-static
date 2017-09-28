@@ -11,6 +11,7 @@ module.exports = {
         index: "./html/index.html",
         details: "./html/podcast-details.html",
         settings: "./html/publish-settings.html",
+        onboarding: "./html/onboarding.html",
         first: "./js/first.js" },
     output: {
         filename: "[name].js",

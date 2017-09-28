@@ -1,5 +1,5 @@
 .main {
-  padding-top: 45px;
+  padding-top: $content-top-padding;
   padding-bottom: 240px;
   max-width: 1110px;
   width: 100%;
@@ -12,5 +12,11 @@
 }
 
 .main__content {
+  position: relative;
   max-width: calc(100% - #{$aside-width} - 2 * 15px);
+}
+
+.main__content--center {
+  max-width: $content-single-width;
+  margin: 0 auto;
 }
