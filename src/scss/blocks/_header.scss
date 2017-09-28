@@ -22,6 +22,15 @@
   .navbar-collapse {
     align-items: stretch;
 
+    &.show {
+      display: flex;
+
+      @include max-width(576px) {
+        display: block;
+        padding: 10px 0;
+      }
+    }
+
     .nav-link {
       background-color: #ffffff;
       border-right: 1px solid #e6e9ee;
@@ -49,7 +58,7 @@
       }
     }
 
-    @include max-width(767px) {
+    @include max-width(576px) {
       padding: 10px 0;
     }
   }
@@ -60,6 +69,13 @@
     @include max-width(767px) {
       display: block;
       margin-right: 15px;
+    }
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    @include max-width(576px) {
+      flex-direction: column;
     }
   }
 
