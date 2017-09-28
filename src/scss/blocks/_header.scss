@@ -47,6 +47,10 @@
       @include max-width(767px) {
         border-right: none;
       }
+
+      @include max-width(576px) {
+        line-height: 44px;
+      }
     }
 
     .active .nav-link {
