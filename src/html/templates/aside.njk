@@ -1,0 +1,27 @@
+{% import "../templates/mixins.njk" as mixins %}
+
+<aside class="col-3 aside main__aside">
+  <a class="link link--back aside__back-link" href="#">
+    Back to podcasts
+  </a>
+
+  <div class="aside__block">
+    <ul class="aside__list">
+      <li class="aside__list-item">
+        <a href="#" class="aside__list-link {% if asideActiveItem == 1 %}aside__list-link--active{% endif %}">
+          Podcast details
+        </a>
+      </li>
+      <li class="aside__list-item">
+        <a href="#" class="aside__list-link {% if asideActiveItem == 2 %}aside__list-link--active{% endif %}">
+          Video design
+        </a>
+      </li>
+      <li class="aside__list-item">
+        <a href="#" class="aside__list-link {% if asideActiveItem == 3 %}aside__list-link--active{% endif %}">
+          Publish settings
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>

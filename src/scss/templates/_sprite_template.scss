@@ -1,0 +1,8 @@
+{{#shapes}}
+.svg-{{base}} {
+  height: 1em;
+  font-size:{{height.inner}}px;
+  width:( {{width.inner}} / {{height.inner}} )+em;
+}
+
+{{/shapes}}

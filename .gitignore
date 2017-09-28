@@ -1,3 +1,6 @@
-﻿
-/node_modules
-
+﻿/.idea/
+/node_modules/
+/src/img/i/
+/src/scss/_sprite.scss
+/libs/
+/build/
