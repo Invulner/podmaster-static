@@ -1,8 +1,0 @@
-<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="icon-bell" transform="translate(1.000000, 1.000000)" stroke-width="2">
-            <path d="M20,15 L0,15 C1.65685425,15 3,13.6568542 3,12 L3,6.99999994 C3.00000006,3.13400671 6.13400679,-4.44089213e-16 10,0 C13.8659932,4.44089213e-16 16.9999999,3.13400671 17,6.99999994 L17,12 C17,13.6568542 18.3431458,15 20,15 L20,15 Z" id="Shape" stroke="#8F9EB3" fill="#8F9EB3"></path>
-            <path d="M11,19 C10.6897707,19.6168043 10.1182676,19.9964563 9.5,19.9964563 C8.88173242,19.9964563 8.31022927,19.6168043 8,19 L11,19 Z" id="Path" stroke="#ADBACC"></path>
-        </g>
-    </g>
-</svg>

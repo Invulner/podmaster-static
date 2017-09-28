@@ -1,0 +1,51 @@
+{% macro svg(name, mod, class) %}
+
+  <svg class="svg-i svg-{{ name }} {% if mod %}svg-{{ name }}--{{ mod }}{% endif %} {{ class }}" role="img">
+    <use xlink:href="img/i/sprite.svg#{{ name }}"/>
+  </svg>
+
+{% endmacro %}
+
+
+
+
+{% macro panelRow(title, date, status, info=false, desc) %}
+
+  <div class="panel__row">
+    <div class="panel__column panel__column--title">
+      {{ title }}
+    </div>
+    <div class="panel__column panel__column--release">
+      <time>{{ date }}</time>
+    </div>
+    <div class="panel__column panel__column--status">
+      <div class="publish-status publish-status--{{ status | lower}}">
+        {{ status }}
+      </div>
+
+      {% if info %}
+        <svg class="svg-i svg-info" role="img">
+          <use xlink:href="img/i/sprite.svg#info"/>
+        </svg>
+      {% endif %}
+
+      <span class="podmaster-dropdown__arrow panel__expand-row-btn" data-toggle="collapse"
+            data-target="#row-description-{{ title | replace(' ', "_") | replace('"', "_") | replace("'", "_") | replace('?', "")| replace('!', "") | lower}}">
+         <svg class="svg-i svg-arrow-down-small" role="img">
+           <use xlink:href="img/i/sprite.svg#arrow-down-small"/>
+         </svg>
+      </span>
+    </div>
+  </div>
+
+  <div class="panel__row-description collapse" id="row-description-{{ title | replace(' ', "_") | replace('"', "_") | replace("'", "_") | replace('?', "")| replace('!', "") | lower}}">
+    <p class="panel__episode-description">
+      {{ desc }}
+    </p>
+  </div>
+
+{% endmacro %}
+
+
+{# {% import "../templates/mixins.njk" as mixins %} #}
+{# {{mixins.svg('[NAME]')}} #}

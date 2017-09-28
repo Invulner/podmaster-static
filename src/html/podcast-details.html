@@ -1,0 +1,145 @@
+{% import "../templates/mixins.njk" as mixins %}
+
+{% include "head.njk" %}
+{% include "nav.njk" %}
+
+<div class="container main">
+  <div class="row">
+
+    {% set asideActiveItem = 1 %}
+    {% include "aside.njk" %}
+
+    <div class="col-9 main__content">
+      <h2 class="section-title">Dope - Choose Your Style Podcast</h2>
+
+      <div class="podcast-details">
+        <div class="podcast-details__main">
+          <div class="podcast-details__img-block">
+            <img src="http://placehold.it/220x220" alt="podcast image" class="podcast-details__img rounded"/>
+          </div>
+          <div class="podcast-details__body">
+            <p class="podcast-details__text">
+              Get the marketing shortcuts you need to jump-start your online business. Brian Moran, a marketing
+              expert and the co-founder at SamCart, shares his daily insights from growing and running a
+              multi-million dollar software startup, so that you can apply them in your own business. Brian's
+              marketing tips are edited down into 5 minute bite-sized chunks so you can spend you time
+              implementing them instead of listening to podcasts all day long.
+            </p>
+            <div class="podcast-details__controls">
+              <p class="podcast-details__message">
+                Auto publish to Youtube
+                <a class="podcast-details__tooltip tooltip-block" type="button" data-toggle="tooltip"
+                   data-placement="top"
+                   title="Every new episode will be published to YouTube automatically, as well as any that are currently…">
+                  {{mixins.svg('help')}}
+                </a>
+              </p>
+              <label class="switch-checkbox podcast-details__checkbox">
+                <input type="checkbox" class="switch-checkbox__input"/>
+                <span class="switch-checkbox__appearance">
+                    <span class="switch-checkbox__text switch-checkbox__text--on">On</span>
+                    <span class="switch-checkbox__text switch-checkbox__text--off">Off</span>
+                  </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="podcast-details__footer">
+          <a href="#" class="link">Preview sample video</a>
+          <a href="#" class="link">Edit publish settings</a>
+        </div>
+      </div>
+
+      <h3 class="section-sub-title">
+        All Episodes
+
+        <div class="podmaster-dropdown podmaster-dropdown--arrow dropdown">
+          <div class="podmaster-dropdown__toggle dropdown-toggle" id="episodes-dropdown" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+              <span class="podmaster-dropdown__arrow">
+                {{mixins.svg('arrow-down-small')}}
+              </span>
+          </div>
+
+          <div class="podmaster-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="episodes-dropdown">
+            <a class="podmaster-dropdown__item podmaster-dropdown__item--checked dropdown-item" href="#">All</a>
+            <a class="podmaster-dropdown__item dropdown-item" href="#">Published</a>
+            <a class="podmaster-dropdown__item dropdown-item" href="#">Backlogged</a>
+          </div>
+        </div>
+      </h3>
+
+      <div class="panel">
+        <div class="panel__table-header">
+          <div class="panel__column panel__column--title">
+            Episode Title
+          </div>
+          <div class="panel__column panel__column--release">
+            Released on
+          </div>
+          <div class="panel__column panel__column--status">
+            Publish Status
+          </div>
+        </div>
+
+
+        {{ mixins.panelRow(
+          title = "042 - Breaking the Chain",
+          date = "Feb 22, 2017",
+          status = "Published",
+          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
+        )}}
+
+        {{ mixins.panelRow(
+          title = "041 - What Doesn't Seem Like Work?",
+          date = "Feb 01, 2017",
+          status = "Published",
+          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
+        )}}
+
+        {{ mixins.panelRow(
+          title = "039 - Just",
+          date = "Jan 11, 2017",
+          status = "Published",
+          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
+        )}}
+
+        {{ mixins.panelRow(
+          title = "038 - Winging It",
+          date = "Jan 04, 2017",
+          status = "Published",
+          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
+        )}}
+
+        {{ mixins.panelRow(
+          title = "037 - The Top 5 Regrets of Dying People",
+          date = "Dec 28, 2016",
+          status = "Published",
+          info = true,
+          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
+        )}}
+
+        {{ mixins.panelRow(
+          title = "036 - Living the Quiet Life",
+          date = "Dec 01, 2016",
+          status = "Backlogged",
+          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
+        )}}
+
+        {{ mixins.panelRow(
+          title = "035 - Be Kind",
+          date = "Dec 07, 2016",
+          status = "Backlogged",
+          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
+        )}}
+      </div>
+
+      <div class="btn-container btn-container--pagination">
+        <button class="btn btn--light-blue">Load More Episodes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "footer.njk" %}

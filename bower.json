@@ -1,0 +1,25 @@
+{
+  "name": "podmaster",
+  "description": "",
+  "main": "build/index.html",
+  "authors": [
+    "MaxShylov <shma9013@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "normalize.scss#^7.0.0",
+    "jquery": "^3.2.1",
+    "bootstrap": "v4.0.0-beta",
+    "bootstrap-switch": "^3.3.4"
+  }
+}
