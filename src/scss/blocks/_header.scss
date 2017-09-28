@@ -70,8 +70,9 @@
     padding: 0 20px;
     position: relative;
 
-    &:not(:last-child) {
-      border-right: 1px solid #e6e9ee;
+    &:not(:first-child),
+    &:only-child {
+      border-left: 1px solid #e6e9ee;
     }
 
     @include max-width(960px) {
@@ -102,4 +103,8 @@
       align-items: center;
     }
   }
+}
+
+.fixed-top {
+  z-index: 5;
 }

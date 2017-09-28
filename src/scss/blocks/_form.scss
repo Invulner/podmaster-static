@@ -5,6 +5,10 @@
     margin-bottom: 3px;
     font-size: 13px;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form-check {

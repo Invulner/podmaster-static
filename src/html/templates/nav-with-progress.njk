@@ -8,26 +8,23 @@
     </button>
   </div>
 
-  <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
-        <a class="nav-link" href="#">Dashboard</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">My Podcasts</a>
-      </li>
-    </ul>
+  <ul class="steps-trail">
+    <li class="steps-trail__item steps-trail__item--complete">
+      <span class="steps-trail__item-order">1</span>
+      Create an account
+    </li>
+    <li class="steps-trail__item steps-trail__item--current">
+      <span class="steps-trail__item-order">2</span>
+      Import Podcast
+    </li>
+    <li class="steps-trail__item">
+      <span class="steps-trail__item-order">3</span>
+      Publish Settings
+    </li>
+  </ul>
 
+  <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="navbar-nav nav-profile ml-auto">
-      <li>
-        <button class="btn btn--green">Add Podcast</button>
-      </li>
-      <li>
-        <a href="#" data-toggle="dropdown" class="notification notification--active">
-          {{mixins.svg('bell')}}
-        </a>
-        <ul class="dropdown-menu dropdown-menu-right  notifications"></ul>
-      </li>
       <li>
         <a href="#" class="profile-dropdown" data-toggle="dropdown">
           <img src="http://placehold.it/40x40" class="profile-dropdown__img img-circle ml10" alt="user" title="user">

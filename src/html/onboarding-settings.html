@@ -1,0 +1,179 @@
+{% import "../templates/mixins.njk" as mixins %}
+
+{% include "head.njk" %}
+{% include "nav-with-progress.njk" %}
+
+<div class="container main">
+  <div class="main__content main__content--center">
+    <h2 class="section-title">Dope - Choose Your Style Podcast</h2>
+
+    <div id="accordion">
+      <div class="panel panel--collapse">
+        <div class="panel__header">
+          <h3 class="panel__title">Publish Settings</h3>
+          <a class="panel__collapse-btn collapsed" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapseOne"></a>
+        </div>
+
+        <div class="collapse" id="collapse-1">
+         <div class="panel__body">
+            <div class="row">
+              <div class="col-6">
+                <form>
+                  <div class="form-group">
+                    <label for="youtube-account">Select your Youtube account</label>
+
+                    <select id="youtube-account" class="form-control">
+                      <option value="" disabled selected>Choose your account</option>
+                      <option>Aaron Francis</option>
+                      <option>Aaron Francis 1</option>
+                      <option>Aaron Francis 2</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="playlist">Add to your playlist</label>
+
+                    <select id="playlist" class="form-control">
+                      <option value="" disabled selected>Choose your playlist</option>
+                      <option>Playlist 1</option>
+                      <option>Playlist 2</option>
+                      <option>Playlist 3</option>
+                    </select>
+
+                    <div class="help-block form-group__help form-group__help--right">
+                      {{mixins.svg('info')}}
+                     <p class="hint">
+                        We recommend that you have a playlist exclusively for your podcast. You can create a new playlist directly from the dropdown or
+                        <a href="#" class="link link--inline">create a new playlist</a>
+                        here.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <h5 class="form-group__title">
+                      Playlist privacy settings
+                    </h5>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="private">
+                        <span class="form-check-input-appearance"></span>
+                        Private
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="private" checked>
+                        <span class="form-check-input-appearance"></span>
+                        Public
+                        <span class="hint">
+                          - can be seen by and shared with anyone
+                        </span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="private">
+                        <span class="form-check-input-appearance"></span>
+                        Unlisted
+                      </label>
+                    </div>
+                  </div>
+
+                  <p class="switch-message form__switch-message">
+                    Feature playlist on channel page
+                    <label class="switch-checkbox podcast-details__checkbox">
+                      <input type="checkbox" class="switch-checkbox__input"/>
+                      <span class="switch-checkbox__appearance">
+                        <span class="switch-checkbox__text switch-checkbox__text--on">On</span>
+                        <span class="switch-checkbox__text switch-checkbox__text--off">Off</span>
+                      </span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel--collapse panel--collapse-in">
+        <div class="panel__header">
+          <h3 class="panel__title">Video settings</h3>
+          <span class="panel__title-hint hint">(Optional - Recommended)</span>
+          <a class="panel__collapse-btn" data-toggle="collapse" href="#collapse-2" aria-expanded="true" aria-controls="collapseOne"></a>
+        </div>
+        <div class="collapse show" id="collapse-2">
+          <div class="panel__body">
+            <form>
+              <div class="panel__block">
+                <div class="form-group">
+                  <h5 class="form-group__title">
+                    Video description
+                  </h5>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="custom" checked>
+                      <span class="form-check-input-appearance"></span>
+                      Custom
+                      <span class="hint">
+                        - your custom description will appear on all your episodes
+                      </span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="summary">
+                      <span class="form-check-input-appearance"></span>
+                      Summary
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="full">
+                      <span class="form-check-input-appearance"></span>
+                      Full description
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="playlist">
+                      Select video category
+                      <span class="required-text">(required)</span>
+                    </label>
+
+                    <select id="playlist" class="form-control">
+                      <option value="" disabled selected>Choose your category</option>
+                      <option>Category 1</option>
+                      <option>Category 2</option>
+                      <option>Category 3</option>
+                    </select>
+
+                    <div class="help-block form-group__help form-group__help--right">
+                      {{mixins.svg('info')}}
+                      <p class="hint">
+                        YouTube requires a category, and we've listed them all here. The categories are exceedingly
+                        broad and don't matter that much.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn btn--white">Cancel</button>
+        <button class="btn btn--blue">Save Settings</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "footer.njk" %}
