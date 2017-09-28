@@ -120,19 +120,42 @@
                           <option>Playlist 2</option>
                           <option>Playlist 3</option>
                         </select>
+
+                        <div class="help-block form-group__help form-group__help--right">
+                          <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <g id="icons/info">
+                                      <g id="Group">
+                                          <path d="M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 Z" id="icon" fill="#ADBACC" fill-rule="nonzero"></path>
+                                          <path d="M8,5 C8.553,5 9,4.553 9,4 C9,3.447 8.553,3 8,3 C7.447,3 7,3.447 7,4 C7,4.553 7.447,5 8,5 Z" id="Path" fill="#FFFFFF"></path>
+                                          <path d="M9,11 L9,7 C9,6.447 8.553,6 8,6 L7,6 C6.447,6 6,6.447 6,7 C6,7.553 6.447,8 7,8 L7,11 C6.447,11 6,11.447 6,12 C6,12.553 6.447,13 7,13 L9,13 C9.553,13 10,12.553 10,12 C10,11.447 9.553,11 9,11 Z" id="Path" fill="#FFFFFF"></path>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
+                          <p class="hint">
+                            We recommend that you have a playlist exclusively for your podcast. You can create a new playlist directly from the dropdown or
+                            <a href="#" class="link link--inline">create a new playlist</a>
+                            here.
+                          </p>
+                        </div>
                       </div>
 
                       <div class="form-group">
-                        Playlist privacy settings
+                        <h5 class="form-group__title">
+                          Playlist privacy settings
+                        </h5>
                         <div class="form-check">
                           <label class="form-check-label">
                             <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="private">
+                            <span class="form-check-input-appearance"></span>
                             Private
                           </label>
                         </div>
                         <div class="form-check">
                           <label class="form-check-label">
                             <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="private" checked>
+                            <span class="form-check-input-appearance"></span>
                             Public
                             <span class="hint">
                               - can be seen by and shared with anyone
@@ -142,12 +165,13 @@
                         <div class="form-check">
                           <label class="form-check-label">
                             <input class="form-check-input" type="radio" name="settings-radio" id="settings-radio-1" value="private">
+                            <span class="form-check-input-appearance"></span>
                             Unlisted
                           </label>
                         </div>
                       </div>
 
-                      <p class="switch-message">
+                      <p class="switch-message form__switch-message">
                         Feature playlist on channel page
                         <label class="switch-checkbox podcast-details__checkbox">
                           <input type="checkbox" class="switch-checkbox__input"/>

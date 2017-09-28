@@ -2357,6 +2357,14 @@ time {
   font-family: November Light, sans-serif;
   color: #6b7e99; }
 
+.help-block {
+  position: relative;
+  padding-left: 20px; }
+  .help-block svg {
+    position: absolute;
+    left: 0;
+    top: 0; }
+
 .switch-message {
   display: flex;
   justify-content: space-between;
@@ -2373,6 +2381,12 @@ time {
     border-bottom-color: transparent;
     text-decoration: none;
     color: #1951ff; }
+
+.link--inline {
+  border-bottom: 0;
+  font-size: inherit; }
+  .link--inline:hover {
+    text-decoration: underline; }
 
 .link--back {
   margin-left: 20px; }
@@ -3122,3 +3136,70 @@ time {
 
 .main__content {
   max-width: calc(100% - 240px - 2 * 15px); }
+
+.form-group {
+  position: relative; }
+  .form-group label:not(.form-check-label) {
+    margin-bottom: 3px;
+    font-size: 13px; }
+
+.form-check {
+  margin-bottom: 5px; }
+
+.form-group__title {
+  font-size: inherit;
+  margin-bottom: 12px; }
+
+.form-group__help--right {
+  position: absolute;
+  top: 35px;
+  left: 100%;
+  margin-left: 20px;
+  width: 100%; }
+
+.form-check-input {
+  display: none; }
+
+.form-check-label {
+  padding-left: 0; }
+
+.form-check-input-appearance {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 1px solid #adbacc;
+  background: #f2f6fa;
+  position: relative;
+  top: -3px; }
+  .form-check-input:checked + .form-check-input-appearance {
+    background: #fff;
+    border-color: #1951ff; }
+  .form-check-input[type='radio'] + .form-check-input-appearance {
+    border-radius: 50%; }
+  .form-check-input[type='radio']:checked + .form-check-input-appearance:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    margin-left: -3px;
+    border-radius: 50%;
+    background: #1951ff; }
+  .form-check-input[type='checkbox'] + .form-check-input-appearance {
+    border-radius: 3px; }
+  .form-check-input[type='checkbox']:checked + .form-check-input-appearance:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 6px;
+    transform: translate(-50%, -50%);
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDggNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9Imljb25zL2NoZWNrYm94L2NoZWNrZWQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01LjAwMDAwMCwgLTYuMDAwMDAwKSIgZmlsbC1ydWxlPSJub256ZXJvIiBmaWxsPSIjMTk1MUZGIj4gICAgICAgICAgICA8cGF0aCBkPSJNOCwxMiBDNy43NSwxMiA3LjUsMTEuOSA3LjMsMTEuNyBMNS4zLDkuNyBDNC45LDkuMyA0LjksOC43IDUuMyw4LjMgQzUuNyw3LjkgNi4zNSw3LjkgNi43LDguMyBMOCw5LjYgTDExLjMsNi4zIEMxMS43LDUuOSAxMi4zLDUuOSAxMi43LDYuMyBDMTMuMSw2LjcgMTMuMSw3LjMgMTIuNyw3LjcgTDguNywxMS43IEM4LjUsMTEuOSA4LjI1LDEyIDgsMTIgWiIgaWQ9ImNoZWNrIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=") no-repeat; }
+
+.form__switch-message {
+  margin-top: 25px; }

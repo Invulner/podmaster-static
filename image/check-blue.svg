@@ -1,0 +1,7 @@
+<svg width="8px" height="6px" viewBox="0 0 8 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/checkbox/checked" transform="translate(-5.000000, -6.000000)" fill-rule="nonzero" fill="#1951FF">
+            <path d="M8,12 C7.75,12 7.5,11.9 7.3,11.7 L5.3,9.7 C4.9,9.3 4.9,8.7 5.3,8.3 C5.7,7.9 6.35,7.9 6.7,8.3 L8,9.6 L11.3,6.3 C11.7,5.9 12.3,5.9 12.7,6.3 C13.1,6.7 13.1,7.3 12.7,7.7 L8.7,11.7 C8.5,11.9 8.25,12 8,12 Z" id="check"></path>
+        </g>
+    </g>
+</svg>

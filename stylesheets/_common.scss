@@ -32,6 +32,17 @@ time {
   color: #6b7e99;
 }
 
+.help-block {
+  position: relative;
+  padding-left: 20px;
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
 .switch-message {
   display: flex;
   justify-content: space-between;

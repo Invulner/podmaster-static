@@ -12,6 +12,15 @@
   }
 }
 
+.link--inline {
+  border-bottom: 0;
+  font-size: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .link--back {
   margin-left: 20px;
 
