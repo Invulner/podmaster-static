@@ -1,0 +1,29 @@
+.help-block {
+  position: relative;
+  padding-left: 20px;
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.help-block--tip {
+  padding-left: 0;
+}
+
+.help-block__label {
+  text-transform: uppercase;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  line-height: 21px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background: $blue-active;
+  color: #fff;
+  font-size: 11px;
+  margin-top: -3px;
+}
