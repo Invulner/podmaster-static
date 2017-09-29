@@ -1,0 +1,50 @@
+.bootstrap-select.btn-group {
+  .dropdown-toggle {
+    &:focus {
+      outline: none!important;
+      border: 1px solid #668cff;
+      box-shadow: 0 0 4px 0 rgba($blue-active, .3);
+    }
+
+    &:hover {
+      background: #fff;
+
+      &::after {
+        background-image: url("../img/arrow-up-down--dark.svg");
+      }
+    }
+
+    &::after {
+      border: none;
+      width: 8px;
+      height: 14px;
+      background-image: url("../img/arrow-up-down.svg");
+      vertical-align: middle;
+    }
+  }
+
+  .dropdown-menu.inner {
+    display: block;
+
+    li a {
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:focus,
+      &:active{
+        outline: none;
+        box-shadow: none;
+      }
+
+      span.text {
+        display: block;
+        padding: 10px 20px;
+
+        &:hover {
+          background-color: #f5f7fa;
+        }
+      }
+    }
+  }
+}

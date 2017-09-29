@@ -26,3 +26,9 @@ $('.panel--collapse .collapse')
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+
+$('.selectpicker').selectpicker({
+  style: 'btn--white',
+  size: 4
+});
