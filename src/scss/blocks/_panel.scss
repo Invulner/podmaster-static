@@ -167,8 +167,14 @@ $panel__side-padding: 20px;
   font-size: 14px;
 }
 
-.panel__block {
+.panel__section {
   padding-bottom: 30px;
   border-bottom: 1px solid #dae1eb;
   margin-bottom: 24px;
+}
+
+.panel__block {
+  padding: 15px;
+  border-radius: 3px;
+  background: #f2f6fa;
 }

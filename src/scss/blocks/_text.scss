@@ -1,0 +1,13 @@
+.text {
+  font-size: 13px;
+  font-family: November Regular, sans-serif;
+  color: #596980;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.text__highlighted {
+  color: $blue-active;
+}
