@@ -8,12 +8,7 @@ $panel__side-small-padding: 10px;
   color: #263140;
   font-family: November Regular, sans-serif;
   border-radius: 4px;
-  padding: 0 $panel__side-padding;
   background: #fff;
-
-  @include max-width(567px) {
-    padding: 0 $panel__side-small-padding;
-  }
 }
 
 .panel__table-header {
@@ -29,21 +24,27 @@ $panel__side-small-padding: 10px;
 .panel__row,
 .panel__row-description,
 .panel__header {
-  margin-left: - $panel__side-padding;
   padding: 0 $panel__side-padding;
-  width: calc(100% + 2 * #{$panel__side-padding});
+}
 
-  @include max-width(567px) {
-    margin-left: - $panel__side-small-padding;
-    padding: 0 $panel__side-small-padding;
-    width: calc(100% + 2 * #{$panel__side-small-padding});
+.panel__table-header {
+  display: flex;
+  height: 50px;
+
+  @include max-width(576px) {
+    display: none;
   }
 }
 
-.panel__table-header,
 .panel__row {
   display: flex;
   height: 50px;
+
+  @include max-width(576px) {
+    flex-direction: column;
+    height: auto;
+    padding: $panel__side-small-padding;
+  }
 }
 
 .panel__column {
@@ -52,19 +53,67 @@ $panel__side-small-padding: 10px;
 
   &:not(:last-child) {
     margin-right: 20px;
+
+    @include max-width(576px) {
+      margin-right: 5px;
+    }
   }
 }
 
 .panel__column--title {
   width: 52%;
+
+  @include max-width(576px) {
+    min-width: 100%;
+    margin-bottom: 5px;
+
+    &:before {
+      content: 'Episode Title:';
+      width: 80px;
+      min-width: 80px;
+      font-size: 11px;
+    }
+  }
 }
 
 .panel__column--release {
   width: 19%;
+
+  @include max-width(576px) {
+    min-width: 100%;
+
+    &:before {
+      content: 'Released on:';
+      width: 80px;
+      min-width: 80px;
+      font-size: 11px;
+    }
+  }
 }
 
 .panel__column--status {
   width: 29%;
+  min-width: 137px;
+
+  @include max-width(576px) {
+    min-width: 100%;
+    width: 100%;
+
+    &:before {
+      content: 'Publish Status:';
+      width: 80px;
+      min-width: 80px;
+      font-size: 11px;
+    }
+  }
+
+  .svg-info {
+    margin-right: 5px;
+  }
+
+  @include max-width(576px) {
+    min-width: 0;
+  }
 }
 
 .panel__row,
@@ -187,11 +236,11 @@ $panel__side-small-padding: 10px;
   font-size: 14px;
 }
 
-.panel__section {
-  padding-bottom: 30px;
-  border-bottom: 1px solid #dae1eb;
-  margin-bottom: 24px;
-}
+//.panel__block {
+//  padding-bottom: 30px;
+//  border-bottom: 1px solid #dae1eb;
+//  margin-bottom: 24px;
+//}
 
 .panel__block {
   padding: 15px;

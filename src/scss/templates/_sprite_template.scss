@@ -3,6 +3,7 @@
   height: 1em;
   font-size:{{height.inner}}px;
   width:( {{width.inner}} / {{height.inner}} )+em;
+  min-width:( {{width.inner}} / {{height.inner}} )+em;
 }
 
 {{/shapes}}

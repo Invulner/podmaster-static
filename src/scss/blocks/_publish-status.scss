@@ -6,6 +6,10 @@
   font-size: 11px;
   line-height: 20px;
   margin-right: 4px;
+
+  @include max-width(576px) {
+    font-size: 9px;
+  }
 }
 
 .publish-status--published {
