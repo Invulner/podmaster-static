@@ -55,7 +55,8 @@
 
 .steps-trail__item--complete:before {
   content: '';
-  background: $success;
+  background: $success url('../img/check-white.svg') center no-repeat;
+  background-size: 11px 8px;
 }
 
 .steps-trail__item--complete:before,
