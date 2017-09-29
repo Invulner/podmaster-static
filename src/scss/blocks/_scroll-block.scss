@@ -1,0 +1,54 @@
+.scroll {
+
+  &-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &-view {
+    overflow-y: scroll;
+    max-height: 200px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    &--horizontal {
+      overflow-y: auto;
+      overflow-x: scroll;
+      max-height: 100%;
+    }
+  }
+
+  &-box {
+    position: absolute;
+    height: 100%;
+    width: 9px;
+    top: 0;
+    right: 0;
+    padding: 2px;
+    z-index: 100;
+
+    &--horizontal {
+      height: 9px;
+      width: 100%;
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  &-bar {
+    width: 5px;
+    height: 0;
+    background: #ccc;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+
+    &--horizontal {
+      width: 0;
+      height: 5px;
+    }
+  }
+}

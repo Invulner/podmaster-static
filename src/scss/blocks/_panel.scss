@@ -9,15 +9,6 @@ $panel__side-padding: 20px;
   border-radius: 4px;
   padding: 0 $panel__side-padding;
   background: #fff;
-
-  @include max-width(576px) {
-    font-size: 12px;
-    line-height: 16px;
-
-    .svg-info {
-      display: none;
-    }
-  }
 }
 
 .panel__table-header {
@@ -28,9 +19,6 @@ $panel__side-padding: 20px;
   border-bottom: 1px solid $border-color;
   border-radius: 4px 4px 0 0;
 
-  @include max-width(576px) {
-    font-size: 11px;
-  }
 }
 
 .panel__table-header,
@@ -42,7 +30,7 @@ $panel__side-padding: 20px;
   width: calc(100% + 2 * #{$panel__side-padding});
 
   @include max-width(576px) {
-    padding: 0 10px;
+    width: auto;
   }
 }
 
@@ -50,10 +38,6 @@ $panel__side-padding: 20px;
 .panel__row {
   display: flex;
   height: 50px;
-
-  @include max-width(576px) {
-    height: auto;
-  }
 }
 
 .panel__column {
@@ -71,14 +55,47 @@ $panel__side-padding: 20px;
 
 .panel__column--title {
   width: 52%;
+
+  @include max-width(576px) {
+    min-width: 200px;
+  }
 }
 
 .panel__column--release {
   width: 19%;
+
+  @include max-width(576px) {
+    min-width: 200px;
+  }
 }
 
 .panel__column--status {
   width: 29%;
+  min-width: 137px;
+
+  @include max-width(576px) {
+    min-width: 200px;
+  }
+
+  .podmaster-dropdown__arrow {
+    @include max-width(576px) {
+      min-width: 15px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .svg-info {
+    margin-right: 5px;
+
+    @include max-width(576px) {
+      display: none;
+    }
+  }
+
+  @include max-width(576px) {
+    min-width: 0;
+  }
 }
 
 .panel__row,

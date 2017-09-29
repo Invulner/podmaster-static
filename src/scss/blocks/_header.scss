@@ -1,5 +1,5 @@
 .header {
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0 2px 1px 0 #f3f6fa, inset 0 -1px 0 0 #e6e9ee;
   padding: 0;
   align-items: stretch;
@@ -11,7 +11,7 @@
     background-color: #3647b4;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     line-height: $header-height;
     padding: 0;
@@ -31,8 +31,16 @@
       }
     }
 
+    &.collapsing {
+      display: flex;
+
+      @include max-width(576px) {
+        display: block;
+      }
+    }
+
     .nav-link {
-      background-color: #ffffff;
+      background-color: #fff;
       border-right: 1px solid #e6e9ee;
       font-family: November Regular, sans-serif;
       font-size: 14px;

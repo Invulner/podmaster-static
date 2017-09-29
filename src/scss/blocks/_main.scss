@@ -10,7 +10,7 @@
   max-width: $aside-width + 2 * 15px;
   padding-top: 9px;
 
-  @include max-width(576px) {
+  @include max-width(768px) {
     max-width: 100%;
     flex-basis: 100%;
     margin-bottom: 30px;

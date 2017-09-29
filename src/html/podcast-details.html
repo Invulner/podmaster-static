@@ -70,69 +70,97 @@
         </div>
       </h3>
 
-      <div class="panel">
-        <div class="panel__table-header">
-          <div class="panel__column panel__column--title">
-            Episode Title
-          </div>
-          <div class="panel__column panel__column--release">
-            Released on
-          </div>
-          <div class="panel__column panel__column--status">
-            Publish Status
+      <div class="scroll-wrap scroll-wrap--horizontal">
+
+        <div class="scroll-view scroll-view--horizontal">
+          <div class="scroll-content scroll-content--horizontal">
+
+            <div class="panel">
+            <div class="panel__table-header">
+              <div class="panel__column panel__column--title">
+                Episode Title
+              </div>
+              <div class="panel__column panel__column--release">
+                Released on
+              </div>
+              <div class="panel__column panel__column--status">
+                Publish Status
+              </div>
+            </div>
+
+
+            {{ mixins.panelRow(
+            title = "042 - Breaking the Chain",
+            date = "Feb 22, 2017",
+            status = "Published",
+            desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much
+            longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video
+            description for each episode to increase interaction."
+            )}}
+
+            {{ mixins.panelRow(
+            title = "041 - What Doesn't Seem Like Work?",
+            date = "Feb 01, 2017",
+            status = "Published",
+            desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much
+            longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video
+            description for each episode to increase interaction."
+            )}}
+
+            {{ mixins.panelRow(
+            title = "039 - Just",
+            date = "Jan 11, 2017",
+            status = "Published",
+            desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much
+            longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video
+            description for each episode to increase interaction."
+            )}}
+
+            {{ mixins.panelRow(
+            title = "038 - Winging It",
+            date = "Jan 04, 2017",
+            status = "Published",
+            desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much
+            longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video
+            description for each episode to increase interaction."
+            )}}
+
+            {{ mixins.panelRow(
+            title = "037 - The Top 5 Regrets of Dying People",
+            date = "Dec 28, 2016",
+            status = "Published",
+            info = true,
+            desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much
+            longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video
+            description for each episode to increase interaction."
+            )}}
+
+            {{mixins.panelRow(
+            title = "036 - Living the Quiet Life",
+            date = "Dec 01, 2016",
+            status = "Backlogged",
+            info = true,
+            desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much
+            longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video
+            description for each episode to increase interaction."
+            )}}
+
+            {{ mixins.panelRow(
+            title = "035 - Be Kind",
+            date = "Dec 07, 2016",
+            status = "Backlogged",
+            desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much
+            longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video
+            description for each episode to increase interaction."
+            )}}
+
+
+            <div class="scroll-box scroll-box--horizontal">
+              <div class="scroll-bar scroll-bar--horizontal"></div>
+            </div>
+
           </div>
         </div>
-
-
-        {{ mixins.panelRow(
-          title = "042 - Breaking the Chain",
-          date = "Feb 22, 2017",
-          status = "Published",
-          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
-        )}}
-
-        {{ mixins.panelRow(
-          title = "041 - What Doesn't Seem Like Work?",
-          date = "Feb 01, 2017",
-          status = "Published",
-          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
-        )}}
-
-        {{ mixins.panelRow(
-          title = "039 - Just",
-          date = "Jan 11, 2017",
-          status = "Published",
-          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
-        )}}
-
-        {{ mixins.panelRow(
-          title = "038 - Winging It",
-          date = "Jan 04, 2017",
-          status = "Published",
-          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
-        )}}
-
-        {{ mixins.panelRow(
-          title = "037 - The Top 5 Regrets of Dying People",
-          date = "Dec 28, 2016",
-          status = "Published",
-          info = true,
-          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
-        )}}
-
-        {{ mixins.panelRow(
-          title = "036 - Living the Quiet Life",
-          date = "Dec 01, 2016",
-          status = "Backlogged",
-          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
-        )}}
-
-        {{ mixins.panelRow(
-          title = "035 - Be Kind",
-          date = "Dec 07, 2016",
-          status = "Backlogged",
-          desc = "Yikes, bummer choice. This is a short video episode description, but this description can be much longer depending on the user’s publish settings page. In fact I encourage to create a nice compelling video description for each episode to increase interaction."
-        )}}
       </div>
 
       <div class="btn-container btn-container--pagination">
@@ -142,4 +170,4 @@
   </div>
 </div>
 
-{% include "footer.njk" %}
+    {% include "footer.njk" %}
