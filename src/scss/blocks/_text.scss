@@ -6,6 +6,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  .form-check-inline + & {
+    @include max-width(567px) {
+      margin-top: 20px;
+    }
+  }
 }
 
 .text__highlighted {
