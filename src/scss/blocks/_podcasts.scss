@@ -143,9 +143,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  padding-left: 65px;
+  margin-left: 65px;
   user-select: none;
   padding-right: 0;
+  min-width: 266px;
 
   label {
     font-family: November Regular, sans-serif;
@@ -159,9 +160,25 @@
   .dropdown {
     display: flex;
     align-items: center;
+    margin-left: 40px;
+
+    @include max-width(960px) {
+      margin-left: auto;
+    }
   }
 
   @include max-width(960px) {
-    padding-left: 15px;
+    margin-left: 15px;
+  }
+
+  @include max-width(768px) {
+    padding-left: 0;
+    margin-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include max-width(576px) {
+    padding-left: 0;
+    margin-left: 0;
   }
 }
