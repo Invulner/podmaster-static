@@ -92,3 +92,14 @@
 .form__switch-message {
   margin-top: 25px;
 }
+
+.form-control {
+  border-color: #cad0d9;
+  font-size: 14px;
+  color: #2e3b4d;
+}
+
+textarea.form-control {
+  resize: none;
+  height: 100px;
+}

@@ -7,6 +7,10 @@
     left: 0;
     top: 0;
   }
+
+  .form-group + & {
+    margin-top: -5px;
+  }
 }
 
 .help-block--tip {

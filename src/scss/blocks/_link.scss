@@ -19,6 +19,10 @@
   &:hover {
     text-decoration: underline;
   }
+
+  .form-group & {
+    font-size: 13px;
+  }
 }
 
 .link--back {
