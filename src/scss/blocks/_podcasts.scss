@@ -120,8 +120,14 @@
     display: inline;
   }
 
+  .collapsing + a,
   .collapse.show + a {
-    display: none;
+    font-size: 0;
+
+    &:before {
+      content: '…Read less';
+      color: $blue-active;
+    }
   }
 }
 
