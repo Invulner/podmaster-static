@@ -22,23 +22,6 @@
   .navbar-collapse {
     align-items: stretch;
 
-    &.show {
-      display: flex;
-
-      @include max-width(576px) {
-        display: block;
-        padding: 10px 0;
-      }
-    }
-
-    &.collapsing {
-      display: flex;
-
-      @include max-width(576px) {
-        display: block;
-      }
-    }
-
     .nav-link {
       background-color: #fff;
       border-right: 1px solid #e6e9ee;
@@ -69,10 +52,6 @@
         box-shadow: none;
       }
     }
-
-    @include max-width(576px) {
-      padding: 10px 0;
-    }
   }
 
   .navbar-toggle {
@@ -87,8 +66,32 @@
   .navbar-nav {
     flex-direction: row;
 
+    @include max-width(768px) {
+      &:first-child {
+        float: left;
+      }
+
+      &:last-child {
+        float: right;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+      }
+    }
+
     @include max-width(576px) {
       flex-direction: column;
+
+      &:first-child {
+        margin-top: 10px;
+        float: none;
+      }
+
+      &:last-child {
+        margin-top: 10px;
+        float: none;
+      }
     }
   }
 
