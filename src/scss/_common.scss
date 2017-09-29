@@ -53,3 +53,11 @@ time {
 .required-text {
   color: $red;
 }
+
+input,
+select {
+  &:focus {
+    border: 1px solid $blue-active;
+    box-shadow: 0 0 4px 0 rgba(#1951ff, .3);
+  }
+}
