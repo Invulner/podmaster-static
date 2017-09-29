@@ -5,10 +5,38 @@
 .podcast-details__main {
   display: flex;
   margin-bottom: 10px;
+
+  @include max-width(576px) {
+    flex-direction: column;
+  }
+
+  @include max-width(715px) {
+    flex-direction: row;
+  }
+
+  @include max-width(768px) {
+    flex-direction: column;
+  }
 }
 
 .podcast-details__img-block {
   margin-right: 20px;
+
+  @include max-width(576px) {
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  @include max-width(715px) {
+    margin-right: 20px;
+  }
+
+  @include max-width(768px) {
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
 }
 
 .podcast-details__img {

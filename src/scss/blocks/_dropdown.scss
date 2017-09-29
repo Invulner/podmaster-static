@@ -28,6 +28,12 @@
   border: 1px solid $border-color;
   margin-left: 5px;
 
+  @include max-width(576px) {
+    min-width: 15px;
+    width: 15px;
+    height: 15px;
+  }
+
   svg {
     fill: #8f9eb3;
     opacity: .8;

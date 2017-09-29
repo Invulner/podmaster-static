@@ -9,11 +9,31 @@
   flex: 0 0 $aside-width + 2 * 15px; //15px - side padding for bootstrap columns
   max-width: $aside-width + 2 * 15px;
   padding-top: 9px;
+
+  @include max-width(576px) {
+    max-width: 100%;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
 }
 
 .main__content {
   position: relative;
-  max-width: calc(100% - #{$aside-width} - 2 * 15px);
+  //max-width: calc(100% - #{$aside-width} - 2 * 15px);
+
+  @include max-width(768px) {
+    min-width: 540px;
+    flex-basis: 540px
+  }
+
+  @include max-width(576px) {
+    min-width: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
 }
 
 .main__content--center {
