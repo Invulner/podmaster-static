@@ -1,0 +1,38 @@
+.bootstrap-select.btn-group {
+  .dropdown-toggle::after {
+    border: none;
+    width: 8px;
+    height: 14px;
+    background-image: url("../img/arrow-up-down.svg");
+    vertical-align: middle;
+  }
+
+  .dropdown-menu.inner {
+    display: block;
+
+    &.inner {
+      display: block;
+    }
+
+    li a {
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:focus,
+      &:active{
+        outline: none;
+        box-shadow: none;
+      }
+
+      span.text {
+        display: block;
+        padding: 10px 20px;
+
+        &:hover {
+          background: rgba($blue-active, .1);
+        }
+      }
+    }
+  }
+}

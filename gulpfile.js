@@ -26,7 +26,8 @@ const gulp = require('gulp'),
           'libs/bower/jquery/dist/jquery.min.js',
           'libs/bower/popper.js/dist/umd/popper.min.js',
           'libs/bower/bootstrap/dist/js/bootstrap.min.js',
-          'libs/bower/bootstrap-switch/dist/js/bootstrap-switch.min.js'
+          'libs/bower/bootstrap-switch/dist/js/bootstrap-switch.min.js',
+          'libs/bower/bootstrap-select/dist/js/bootstrap-select.min.js'
         ]
       },
       watch: {
