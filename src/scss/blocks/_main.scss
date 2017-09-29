@@ -21,11 +21,6 @@
 .main__content {
   position: relative;
 
-  @include max-width(768px) {
-    min-width: 540px;
-    flex-basis: 540px
-  }
-
   @include max-width(576px) {
     min-width: 0;
     max-width: 100%;
