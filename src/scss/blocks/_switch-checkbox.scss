@@ -23,6 +23,7 @@ $switch-checkbox__padding: 6px;
 .switch-checkbox__appearance {
   display: block;
   width: $switch-checkbox__area-width;
+  min-width: $switch-checkbox__area-width;
   height: 30px;
   border-radius: 20px;
   background: #b8c0cc;
