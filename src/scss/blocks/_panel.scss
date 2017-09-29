@@ -25,6 +25,10 @@ $panel__side-small-padding: 10px;
 .panel__row-description,
 .panel__header {
   padding: 0 $panel__side-padding;
+
+  @include max-width(567px) {
+    padding: 0 $panel__side-small-padding;
+  }
 }
 
 .panel__table-header {
@@ -118,7 +122,7 @@ $panel__side-small-padding: 10px;
 
 .panel__row,
 .panel__row-description {
-  &:not(:last-child) {
+  &:not(:last-child):not(:nth-last-child(2)) {
     border-bottom: 1px solid $border-color;
   }
 }
@@ -137,6 +141,10 @@ $panel__side-small-padding: 10px;
 
 .panel__row-description {
   background: $bg-color;
+
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+  }
 }
 
 .panel__episode-description {
@@ -231,15 +239,21 @@ $panel__side-small-padding: 10px;
 }
 
 .panel__body {
-  padding: 25px 0;
+  padding: 25px $panel__side-padding;
   font-family: November Regular, sans-serif;
   font-size: 14px;
+
+  @include max-width(567px) {
+    padding-left: $panel__side-small-padding;
+    padding-right: $panel__side-small-padding;
+  }
 }
 
-.panel__block {
-  padding-bottom: 30px;
-  border-bottom: 1px solid #dae1eb;
-  margin-bottom: 24px;
+
+.panel__section {
+ padding-bottom: 30px;
+ border-bottom: 1px solid #dae1eb;
+ margin-bottom: 24px;
 }
 
 .panel__block {

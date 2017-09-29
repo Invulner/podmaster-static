@@ -15,7 +15,7 @@
     justify-content: center;
   }
 
-  @include min-width(1024px) {
+  @include min-width(1025px) {
     .main & {
       display: none;
     }
