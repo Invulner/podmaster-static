@@ -20,6 +20,7 @@
     "normalize-scss": "normalize.scss#^7.0.0",
     "jquery": "^3.2.1",
     "bootstrap": "v4.0.0-beta",
-    "bootstrap-switch": "^3.3.4"
+    "bootstrap-switch": "^3.3.4",
+    "bootstrap-select": "^1.12.4"
   }
 }
