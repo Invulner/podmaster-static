@@ -8,12 +8,7 @@ $panel__side-small-padding: 10px;
   color: #263140;
   font-family: November Regular, sans-serif;
   border-radius: 4px;
-  //padding: 0 $panel__side-padding;
   background: #fff;
-
-  //@include max-width(567px) {
-  //  padding: 0 $panel__side-small-padding;
-  //}
 }
 
 .panel__table-header {
@@ -29,13 +24,7 @@ $panel__side-small-padding: 10px;
 .panel__row,
 .panel__row-description,
 .panel__header {
-  //margin-left: - $panel__side-padding;
   padding: 0 $panel__side-padding;
-  //width: calc(100% + 2 * #{$panel__side-padding});
-
-  //@include max-width(576px) {
-    //width: auto;
-  //}
 }
 
 .panel__table-header {
