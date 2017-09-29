@@ -122,7 +122,7 @@ $panel__side-small-padding: 10px;
 
 .panel__row,
 .panel__row-description {
-  &:not(:last-child) {
+  &:not(:last-child):not(:nth-last-child(2)) {
     border-bottom: 1px solid $border-color;
   }
 }
@@ -141,6 +141,10 @@ $panel__side-small-padding: 10px;
 
 .panel__row-description {
   background: $bg-color;
+
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+  }
 }
 
 .panel__episode-description {
