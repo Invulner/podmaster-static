@@ -55,6 +55,7 @@
 
   @include max-width(960px) {
     padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -62,7 +63,7 @@
   margin: 0;
   padding: 0;
 
-  @include max-width(768px) {
+  @include max-width(800px) {
     text-align: center;
   }
 }
@@ -148,7 +149,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  margin-left: 65px;
+  padding-left: 65px;
   user-select: none;
   padding-right: 0;
   min-width: 266px;
@@ -172,18 +173,31 @@
     }
   }
 
-  @include max-width(960px) {
-    margin-left: 15px;
+  @include max-width(1100px) {
+    padding-left: 35px;
   }
 
-  @include max-width(768px) {
-    padding-left: 0;
-    margin-left: 15px;
+  @include max-width(960px) {
+    padding-left: 15px;
+  }
+
+  @include max-width(767px) {
+    padding-left: 15px;
     padding-right: 15px;
   }
 
   @include max-width(576px) {
     padding-left: 0;
     margin-left: 0;
+    padding-right: 0;
+  }
+}
+
+.podcast__image,
+.podcast__content,
+.podcast__trigers {
+  @include max-width(800px) {
+    flex: 0 0 100%;
+    max-width: 100%
   }
 }
