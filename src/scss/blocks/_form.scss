@@ -12,7 +12,7 @@
 }
 
 .form-group--last-with-hint:last-child {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .form-check {
@@ -102,4 +102,20 @@
 textarea.form-control {
   resize: none;
   height: 100px;
+}
+
+input.form-control {
+  height: 40px;
+}
+
+.form-check-inline {
+  margin-bottom: 19px;
+
+  & + & {
+    margin-left: 15px;
+  }
+}
+
+.form-check__pre-inline-text {
+  margin-right: 10px;
 }

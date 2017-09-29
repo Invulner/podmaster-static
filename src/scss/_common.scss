@@ -31,6 +31,10 @@ time {
   font-family: November Light, sans-serif;
   color: #6b7e99;
   margin: 0;
+
+  & + & {
+    margin-top: 10px;
+  }
 }
 
 .switch-message {
@@ -45,9 +49,10 @@ time {
 }
 
 input,
-select {
+select,
+textarea {
   &:focus {
-    border: 1px solid $blue-active;
-    box-shadow: 0 0 4px 0 rgba(#1951ff, .3);
+    border: 1px solid #668cff;
+    box-shadow: 0 0 4px 0 rgba($blue-active, .3);
   }
 }
