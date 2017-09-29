@@ -1,6 +1,6 @@
 {% import "../templates/mixins.njk" as mixins %}
 
-<nav class="navbar navbar-expand-md fixed-top header">
+<nav class="navbar navbar--steps navbar-expand-md fixed-top header">
   <div class="navbar-header">
     <a class="navbar-brand" href="index.html">Podmaster</a>
     <button type="button" class="navbar-toggle btn btn-defult" data-toggle="collapse" data-target="#myNavbar">
@@ -8,20 +8,7 @@
     </button>
   </div>
 
-  <ul class="steps-trail">
-    <li class="steps-trail__item steps-trail__item--complete">
-      <span class="steps-trail__item-order">1</span>
-      Create an account
-    </li>
-    <li class="steps-trail__item steps-trail__item--current">
-      <span class="steps-trail__item-order">2</span>
-      Import Podcast
-    </li>
-    <li class="steps-trail__item">
-      <span class="steps-trail__item-order">3</span>
-      Publish Settings
-    </li>
-  </ul>
+  {% include "steps-trail.njk" %}
 
   <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="navbar-nav nav-profile ml-auto">

@@ -1,4 +1,5 @@
 $panel__side-padding: 20px;
+$panel__side-small-padding: 10px;
 
 .panel {
   border: 1px solid $border-color;
@@ -9,6 +10,10 @@ $panel__side-padding: 20px;
   border-radius: 4px;
   //padding: 0 $panel__side-padding;
   background: #fff;
+
+  @include max-width(567px) {
+    padding: 0 $panel__side-small-padding;
+  }
 }
 
 .panel__table-header {
@@ -173,6 +178,10 @@ $panel__side-padding: 20px;
   margin: 0;
   font-family: November Regular, sans-serif;
   color: #2e3b4d;
+
+  @include max-width(567px) {
+    font-size: 16px;
+  }
 }
 
 .panel__collapse-btn {
@@ -187,6 +196,11 @@ $panel__side-padding: 20px;
 
 .panel__title-hint {
   margin-left: 15px;
+
+  @include max-width(567px) {
+    font-size: 11px;
+    margin-left: 10px;
+  }
 }
 
 .panel__collapse-btn {
@@ -234,8 +248,14 @@ $panel__side-padding: 20px;
   font-size: 14px;
 }
 
+//.panel__block {
+//  padding-bottom: 30px;
+//  border-bottom: 1px solid #dae1eb;
+//  margin-bottom: 24px;
+//}
+
 .panel__block {
-  padding-bottom: 30px;
-  border-bottom: 1px solid #dae1eb;
-  margin-bottom: 24px;
+  padding: 15px;
+  border-radius: 3px;
+  background: #f2f6fa;
 }

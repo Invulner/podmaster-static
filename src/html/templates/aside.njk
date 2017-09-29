@@ -1,14 +1,14 @@
 {% import "../templates/mixins.njk" as mixins %}
 
 <aside class="col-3 aside main__aside">
-  <a class="link link--back aside__back-link" href="#">
+  <a class="link link--back aside__back-link" href="index.html">
     Back to podcasts
   </a>
 
   <div class="aside__block">
     <ul class="aside__list">
       <li class="aside__list-item">
-        <a href="#" class="aside__list-link {% if asideActiveItem == 1 %}aside__list-link--active{% endif %}">
+        <a href="podcast-details.html" class="aside__list-link {% if asideActiveItem == 1 %}aside__list-link--active{% endif %}">
           Podcast details
         </a>
       </li>
@@ -18,7 +18,7 @@
         </a>
       </li>
       <li class="aside__list-item">
-        <a href="#" class="aside__list-link {% if asideActiveItem == 3 %}aside__list-link--active{% endif %}">
+        <a href="publish-settings.html" class="aside__list-link {% if asideActiveItem == 3 %}aside__list-link--active{% endif %}">
           Publish settings
         </a>
       </li>

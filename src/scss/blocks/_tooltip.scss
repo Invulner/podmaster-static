@@ -8,6 +8,7 @@
   color: #fff;
   opacity: 1;
   box-shadow: 0 1px 4px #b8c0cc;
+  max-width: 240px;
 }
 
 .tooltip.show {
@@ -40,4 +41,8 @@
 
 .tooltip-block {
   -webkit-appearance: none !important;
+}
+
+.tooltip-block--inline {
+  vertical-align: middle;
 }

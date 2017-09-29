@@ -1,0 +1,19 @@
+.text {
+  font-size: 13px;
+  font-family: November Regular, sans-serif;
+  color: #596980;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .form-check-inline + & {
+    @include max-width(567px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.text__highlighted {
+  color: $blue-active;
+}

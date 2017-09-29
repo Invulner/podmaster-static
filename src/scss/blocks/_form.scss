@@ -12,7 +12,9 @@
 }
 
 .form-group--last-with-hint:last-child {
-  margin-bottom: 25px;
+  @include min-width(767px) {
+    margin-bottom: 35px;
+  }
 }
 
 .form-check {
@@ -25,11 +27,16 @@
 }
 
 .form-group__help--right {
-  position: absolute;
-  top: 35px;
-  left: 100%;
-  margin-left: 20px;
-  width: 100%;
+  margin-top: 10px;
+
+  @include min-width(767px) {
+    position: absolute;
+    top: 35px;
+    left: 100%;
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .form-check-input {
@@ -102,4 +109,45 @@
 textarea.form-control {
   resize: none;
   height: 100px;
+}
+
+input.form-control {
+  height: 40px;
+}
+
+.form-check-inline {
+  margin-bottom: 19px;
+
+  & + & {
+    margin-left: 15px;
+  }
+
+  @include max-width(567px) {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    & + & {
+      margin-left: 0;
+    }
+  }
+}
+
+.form-check__pre-inline-text {
+  margin-right: 10px;
+
+  @include max-width(567px) {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+
+.form-group__column {
+  @include max-width(767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
