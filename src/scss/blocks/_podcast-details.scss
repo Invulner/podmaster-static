@@ -87,22 +87,3 @@
   display: inline-flex;
   align-items: center;
 }
-
-
-.scroll {
-
-  & &-wrap {
-    position: static;
-  }
-
-  & &-box {
-    position: static;
-    margin-top: -9px;
-  }
-
-  & &-view {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-}

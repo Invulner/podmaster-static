@@ -11,9 +11,9 @@ $panel__side-small-padding: 10px;
   //padding: 0 $panel__side-padding;
   background: #fff;
 
-  @include max-width(567px) {
-    padding: 0 $panel__side-small-padding;
-  }
+  //@include max-width(567px) {
+  //  padding: 0 $panel__side-small-padding;
+  //}
 }
 
 .panel__table-header {
@@ -54,7 +54,7 @@ $panel__side-small-padding: 10px;
   @include max-width(576px) {
     flex-direction: column;
     height: auto;
-    padding: 0 5px;
+    padding: $panel__side-small-padding;
   }
 }
 
@@ -76,13 +76,13 @@ $panel__side-small-padding: 10px;
 
   @include max-width(576px) {
     min-width: 100%;
+    margin-bottom: 5px;
 
     &:before {
       content: 'Episode Title:';
       width: 80px;
       min-width: 80px;
       font-size: 11px;
-      margin-bottom: 5px;
     }
   }
 }
@@ -109,7 +109,6 @@ $panel__side-small-padding: 10px;
   @include max-width(576px) {
     min-width: 100%;
     width: 100%;
-    margin-bottom: 5px;
 
     &:before {
       content: 'Publish Status:';
