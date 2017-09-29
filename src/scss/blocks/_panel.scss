@@ -7,7 +7,7 @@ $panel__side-padding: 20px;
   color: #263140;
   font-family: November Regular, sans-serif;
   border-radius: 4px;
-  padding: 0 $panel__side-padding;
+  //padding: 0 $panel__side-padding;
   background: #fff;
 }
 
@@ -18,26 +18,39 @@ $panel__side-padding: 20px;
   background: #f2f6fa;
   border-bottom: 1px solid $border-color;
   border-radius: 4px 4px 0 0;
-
 }
 
 .panel__table-header,
 .panel__row,
 .panel__row-description,
 .panel__header {
-  margin-left: - $panel__side-padding;
+  //margin-left: - $panel__side-padding;
   padding: 0 $panel__side-padding;
-  width: calc(100% + 2 * #{$panel__side-padding});
+  //width: calc(100% + 2 * #{$panel__side-padding});
+
+  //@include max-width(576px) {
+    //width: auto;
+  //}
+}
+
+.panel__table-header {
+  display: flex;
+  height: 50px;
 
   @include max-width(576px) {
-    width: auto;
+    display: none;
   }
 }
 
-.panel__table-header,
 .panel__row {
   display: flex;
   height: 50px;
+
+  @include max-width(576px) {
+    flex-direction: column;
+    height: auto;
+    padding: 0 5px;
+  }
 }
 
 .panel__column {
@@ -57,7 +70,15 @@ $panel__side-padding: 20px;
   width: 52%;
 
   @include max-width(576px) {
-    min-width: 200px;
+    min-width: 100%;
+
+    &:before {
+      content: 'Episode Title:';
+      width: 80px;
+      min-width: 80px;
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -65,7 +86,14 @@ $panel__side-padding: 20px;
   width: 19%;
 
   @include max-width(576px) {
-    min-width: 200px;
+    min-width: 100%;
+
+    &:before {
+      content: 'Released on:';
+      width: 80px;
+      min-width: 80px;
+      font-size: 11px;
+    }
   }
 }
 
@@ -74,23 +102,20 @@ $panel__side-padding: 20px;
   min-width: 137px;
 
   @include max-width(576px) {
-    min-width: 200px;
-  }
+    min-width: 100%;
+    width: 100%;
+    margin-bottom: 5px;
 
-  .podmaster-dropdown__arrow {
-    @include max-width(576px) {
-      min-width: 15px;
-      width: 15px;
-      height: 15px;
+    &:before {
+      content: 'Publish Status:';
+      width: 80px;
+      min-width: 80px;
+      font-size: 11px;
     }
   }
 
   .svg-info {
     margin-right: 5px;
-
-    @include max-width(576px) {
-      display: none;
-    }
   }
 
   @include max-width(576px) {
