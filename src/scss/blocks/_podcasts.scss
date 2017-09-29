@@ -63,7 +63,7 @@
   margin: 0;
   padding: 0;
 
-  @include max-width(768px) {
+  @include max-width(800px) {
     text-align: center;
   }
 }
@@ -190,5 +190,14 @@
     padding-left: 0;
     margin-left: 0;
     padding-right: 0;
+  }
+}
+
+.podcast__image,
+.podcast__content,
+.podcast__trigers {
+  @include max-width(800px) {
+    flex: 0 0 100%;
+    max-width: 100%
   }
 }
